@@ -9,6 +9,22 @@ body {
 }
 
 
+/* Flexbox */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+
+
 
 .img-overlay {
     transition: all 0.5s;
