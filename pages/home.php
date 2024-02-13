@@ -1,9 +1,6 @@
 <?php
 $PATH = "./";
 
-$head = [
-    "title" => "Home"
-];
 ?>
 
 <!DOCTYPE html>
@@ -24,4 +21,8 @@ $head = [
     <img src="img/1.webp" alt="" class="zoom" width="100">
     
 </body>
+
+
+<?php include $PATH . 'php/footer.php'; ?>
+
 </html>
