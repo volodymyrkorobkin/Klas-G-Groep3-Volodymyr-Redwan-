@@ -8,6 +8,13 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+header {
+    background-color: #F69B37;
+    padding: 0 1rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+}
+
 
 /* Flexbox */
 .flex {
@@ -22,6 +29,15 @@ body {
 }
 .align-center {
     align-items: center;
+}
+
+
+
+
+.no-decoration {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 
