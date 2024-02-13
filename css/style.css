@@ -8,6 +8,47 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+header {
+    background-color: #F69B37;
+    padding: 0 1rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+
+
+/* Tools */
+.wrap-height {
+    height: 100%;
+}
+.wrap-width {
+    width: 100%;
+}
+
+
+
+
+.no-decoration {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 .img-overlay {
