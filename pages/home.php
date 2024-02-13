@@ -11,7 +11,11 @@ $PATH = "./";
     <title><?php echo $head["title"] ?></title>
     <script src="js/zoom.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
+<?php include $PATH . 'php/header.php'; ?>
+
 <body>
 
     <img src="img/fish.jpg" alt="" class="zoom">
