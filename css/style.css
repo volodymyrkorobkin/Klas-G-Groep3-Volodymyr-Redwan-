@@ -6,13 +6,30 @@
 
 body {
     font-family: "Noto Sans", sans-serif;
+    min-height: calc(100vh + 200px);
+}
+
+main {
+    min-height: calc(100vh - 125px);
 }
 
 header {
-    background-color: #F69B37;
-    padding: 0 1rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    height: 150px;
+    height: 125px;
+    font-size: 24px;
+}
+
+footer {
+    height: 200px;
+    font-size: 20px;
+}
+
+header, footer {
+    background-color: #F69B37;
+}
+
+.center-text {
+    text-align: center;
 }
 
 
@@ -21,6 +38,7 @@ header {
     display: flex;
 }
 .flex-column {
+    display: flex;
     flex-direction: column;
 }
 
@@ -29,6 +47,22 @@ header {
 }
 .align-center {
     align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.space-between {
+    justify-content: space-between;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-3 {
+    gap: 3rem;
+}
+
+.flex-grow {
+    flex-grow: 1;
 }
 
 
@@ -41,12 +75,25 @@ header {
 }
 
 
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-10-y {
+    margin: 10px 0;
+}
+
+
 
 
 .no-decoration {
     list-style: none;
     text-decoration: none;
     color: inherit;
+}
+
+hr {
+    border: 1px solid black;
 }
 
 
@@ -59,4 +106,28 @@ header {
 
 .zoom:hover, .zoomed:hover {
     cursor: pointer;
+}
+
+
+.main-margin {
+    max-width: 1250px;
+    min-width: min(1250px, 100%);
+    margin: 0 auto;
+}
+
+
+#header-logo {
+    height: 140px;
+}
+
+header a:hover, header a:active {
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+header a {
+    transition: all 0.5s;
 }

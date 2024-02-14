@@ -1,3 +1,3 @@
 <?php
-
-include 'pages/home.php';
+// Redirect to home.php
+header("Location: pages/home.php");
