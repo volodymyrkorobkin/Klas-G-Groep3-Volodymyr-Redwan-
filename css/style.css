@@ -1,3 +1,4 @@
+/* Basic Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,6 @@
 body {
     font-family: "Noto Sans", sans-serif;
     min-height: calc(100vh + 200px);
-    overflow-x: hidden;
 
     width: 100%;
     min-width: fit-content;
@@ -19,6 +19,17 @@ main {
     min-height: calc(100vh - 125px);
 }
 
+hr {
+    border: 1px solid black;
+}
+
+
+.main-margin {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/* Header and Footer */
 header {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     height: 125px;
@@ -35,8 +46,12 @@ header, footer {
     background-color: #F69B37;
 }
 
-.center-text {
-    text-align: center;
+#header-logo {
+    height: 140px;
+}
+
+header a:hover, header a:active {
+    text-decoration: underline;
 }
 
 
@@ -52,7 +67,6 @@ header, footer {
     display: flex   ;
     flex-direction: row-reverse;
 }
-
 .justify-center {
     justify-content: center;
 }
@@ -65,13 +79,13 @@ header, footer {
 .space-between {
     justify-content: space-between;
 }
+
 .gap-1 {
     gap: 1rem;
 }
 .gap-3 {
     gap: 3rem;
 }
-
 .gap-50 {
     gap: 50px;
 }
@@ -79,12 +93,16 @@ header, footer {
     gap: 100px;
 }
 
-.flex-grow {
-    flex-grow: 1;
-}
-
 
 /* Tools */
+.center-text {
+    text-align: center;
+}
+.no-decoration {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
 .wrap-height {
     height: 100%;
 }
@@ -93,6 +111,7 @@ header, footer {
 }
 
 
+/* Margins and Paddings */
 .margin-10 {
     margin: 10px;
 }
@@ -106,20 +125,7 @@ header, footer {
 }
 
 
-
-
-.no-decoration {
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
-}
-
-hr {
-    border: 1px solid black;
-}
-
-
-
+/* Zoom functionality */
 .img-overlay {
     transition: all 0.5s;
     position: fixed;
@@ -130,20 +136,6 @@ hr {
     cursor: pointer;
 }
 
-
-.main-margin {
-    width: 1250px;
-    margin: 0 auto;
-}
-
-
-#header-logo {
-    height: 140px;
-}
-
-header a:hover, header a:active {
-    text-decoration: underline;
-}
 
 a:hover {
     cursor: pointer;
@@ -339,7 +331,7 @@ video {
     height: 100%;
     transition: all 1s;
 
-    overflow: auto;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
