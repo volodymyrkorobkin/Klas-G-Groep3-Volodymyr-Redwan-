@@ -7,6 +7,7 @@
 body {
     font-family: "Noto Sans", sans-serif;
     min-height: calc(100vh + 200px);
+    overflow-x: hidden;
 }
 
 main {
@@ -130,4 +131,172 @@ a:hover {
 
 header a {
     transition: all 0.5s;
+}
+
+h1 {
+    font-size: 2.9vw;
+}
+
+
+
+
+
+
+/* Codes for Menu webpage */
+ .main-for-menu {
+    margin: 0vw 22.5vw 1vw 15vw;
+} 
+
+#ye-menu-foto {
+    width: 55vw;
+}
+
+.class-for-menu {
+    flex-direction: column;
+    font-size: 1.2vw;
+    
+}
+ 
+.p-for-menu {
+    margin-bottom: 1.7vw;
+    border-bottom: 1px dotted black;
+    
+} 
+
+.italicp-for-menu {
+    font-style: italic;
+    font-size: 1.35vw;
+}
+
+@media screen and (min-width: 768px) {
+   
+
+    .main-for-menu {
+        margin: 0vw 22.5vw 1vw 15vw;
+    }
+
+    #ye-menu-foto {
+        width: 62vw;
+        border-top: 1px solid black;
+    }
+
+    .class-for-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 1.2vw;
+        background-color: #f5f5f5;   
+    }
+
+    .class-for-menu article {
+        width: 19vw;
+    }
+
+    .class-for-menu h2 {
+        font-size: 1vw;
+    }
+
+    .italicp-for-menu {
+        font-style: italic;
+        font-size: 0.8vw;
+    }
+
+    p {
+        padding: 5px;
+    }
+    
+    .p-for-menu {
+        margin-bottom: 1vw;
+        border-bottom: none;
+        font-size: 1vw;
+        
+    }
+
+    h1 {
+        padding-left: 19vw;
+        font-size: 2vw;
+    }
+
+    /* #exceptional-h-for-menu {
+        padding-top: 3vw;
+    } */
+    
+
+  }
+
+
+
+
+
+/* Codes for About-us webpage */
+
+.main-for-aboutus {
+    margin: 0vw 20.5vw 1vw 17vw;
+}
+
+.h1-for-aboutus {
+    padding-left: 22.3vw;
+    padding-top: 0.8vw;
+}
+
+.class-for-aboutus-1 img, .class-for-aboutus-2 img {
+    width: 28vw;
+    border-radius: 1vw;
+}
+
+.class-for-aboutus-1 img{
+    order: 2;
+   
+}
+
+.class-for-aboutus-1 {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+video {
+    padding: 1vw 0vw;
+    width: 57vw;
+}
+
+
+#exceptional-p-for-aboutus {
+    margin-bottom: 1.5vw;
+}
+
+#h2-for-aboutus {
+    font-size: 3vw;
+}
+
+@media screen and (min-width: 768px) { 
+
+    .class-for-aboutus-1, .class-for-aboutus-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5vw;
+        padding-bottom: 3.4vw;
+    
+    }
+
+    .class-for-aboutus-1 img{
+        order: 1;
+       
+    }
+
+    .class-for-aboutus-1 article{
+        order: 2;
+       
+    }
+
+    .class-for-aboutus-1 article, .class-for-aboutus-2 article {
+        width: 30vw;
+        padding-top: 2.4vw;   
+    }
+
+    #h2-for-aboutus {
+        font-size: 1.25vw;
+    }
+    
+
 }

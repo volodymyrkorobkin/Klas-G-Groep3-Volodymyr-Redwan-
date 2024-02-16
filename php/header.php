@@ -6,9 +6,9 @@
         <nav class="flex align-center">
             <ul class="flex no-decoration gap-3">
                 <li><a href="pages/home.php" class="no-decoration">Home</a></li>
-                <li><a href="pages/about.php" class="no-decoration">About</a></li>
-                <li><a href="pages/contact.php" class="no-decoration">Contact</a></li>
-                <li><a href="pages/galerij.php" class="no-decoration">Contact</a></li>
+                <li><a href="pages/about.php" class="no-decoration">Our-Menu</a></li>
+                <li><a href="pages/contact.php" class="no-decoration">Gallery</a></li>
+                <li><a href="pages/galerij.php" class="no-decoration">About-us</a></li>
             </ul>
         </nav>
     </section>
