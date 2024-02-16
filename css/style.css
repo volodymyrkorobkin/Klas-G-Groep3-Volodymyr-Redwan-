@@ -50,6 +50,10 @@ header a:hover, header a:active {
     text-decoration: underline;
 }
 
+#footer-logo {
+    height: 140px;
+}
+
 
 /* Flexbox */
 .flex {

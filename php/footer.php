@@ -2,7 +2,7 @@
     <section class="flex-column main-margin">
         <section class="flex space-between">
             <section class="flex gap-1 align-center">
-                <img src="<?php echo $PATH ?>assets/logo-4.svg" alt="logo" id="header-logo" class="margin-10-y">
+                <img src="<?php echo $PATH ?>assets/logo-4.svg" alt="logo" id="footer-logo" class="margin-10-y">
                 <section>
                     <p>Betaplein 18,</p>
                     <p>2321 KS Leiden</p>
