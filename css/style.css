@@ -192,7 +192,7 @@ h1 {
    
 
     .main-for-menu {
-        margin: 0vw 22.5vw 1vw 15vw;
+        margin: 0vw 20vw 1vw 20vw;
     }
 
     #ye-menu-foto {
@@ -233,7 +233,8 @@ h1 {
     }
 
     h1 {
-        padding-left: 19vw;
+        padding-left: 24vw;
+        padding-top: 1.5vw;
         font-size: 2vw;
     }
 
