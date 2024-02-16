@@ -18,8 +18,12 @@ $head = [
 
     <section id="slideshow-wrap" class="shadow">
         <section id="slides-wrap" class="flex">
-            <img src="../img/home-1.png">
-            <img src="../img/slide2.png">
+            <figure>
+                <img src="../img/home-1.png">
+            </figure>
+            <figure>
+                <img src="../img/home-2.png" class="zoom">
+            </figure>
         </section>
 
         <button onclick="prevSlide()" id="prevSlide">
