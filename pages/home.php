@@ -14,7 +14,7 @@ $head = [
 <?php include $PATH . 'php/head.php'; ?>
 <body>
 <?php include $PATH . 'php/header.php'; ?>
-<main class="main-margin flex-column gap-100">
+<main class="main-margin flex-column gap-100 padding-50-0">
 
     <section id="slideshow-wrap" class="shadow">
         <section id="slides-wrap" class="flex">
