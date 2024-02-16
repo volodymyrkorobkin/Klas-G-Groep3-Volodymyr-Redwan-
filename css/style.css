@@ -317,7 +317,7 @@ video {
     #h2-for-aboutus {
         font-size: 1.25vw;
     }
-    
+}
 
 #slideshow-wrap {
     overflow: hidden;
@@ -429,11 +429,11 @@ img {
     .masonry-grid {
       column-count: 2;
     }
-  }
+}
   
-  /* Для маленьких экранов используем 1 колонку */
   @media (max-width: 500px) {
   .masonry-grid {
       column-count: 1;
     }
-  }
+}
+
