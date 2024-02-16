@@ -6,8 +6,8 @@
         <nav class="flex align-center">
             <ul class="flex no-decoration gap-3">
                 <li><a href="<?php echo $PATH ?>pages/home.php" class="no-decoration">Home</a></li>
-                <li><a href="<?php echo $PATH ?>pages/about.php" class="no-decoration">About</a></li>
-                <li><a href="<?php echo $PATH ?>pages/contact.php" class="no-decoration">Contact</a></li>
+                <li><a href="<?php echo $PATH ?>pages/about-us.php" class="no-decoration">About</a></li>
+                <li><a href="<?php echo $PATH ?>pages/menu.php" class="no-decoration">Menu</a></li>
                 <li><a href="<?php echo $PATH ?>pages/galery.php" class="no-decoration">Galerij</a></li>
             </ul>
         </nav>
