@@ -46,10 +46,6 @@ header, footer {
     background-color: #F69B37;
 }
 
-#header-logo {
-    height: 140px;
-}
-
 header a:hover, header a:active {
     text-decoration: underline;
 }
