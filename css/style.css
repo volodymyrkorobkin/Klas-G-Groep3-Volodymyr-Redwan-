@@ -192,7 +192,7 @@ h1 {
    
 
     .main-for-menu {
-        margin: 0vw 20vw 1vw 20vw;
+        margin: 0vw 19vw 1vw 18.5vw;
     }
 
     #ye-menu-foto {
@@ -252,7 +252,7 @@ h1 {
 /* Codes for About-us webpage */
 
 .main-for-aboutus {
-    margin: 0vw 20.5vw 1vw 17vw;
+    margin: 0vw 18.5vw 1vw 20vw;
 }
 
 .h1-for-aboutus {
@@ -278,7 +278,7 @@ h1 {
 
 video {
     padding: 1vw 0vw;
-    width: 57vw;
+    width: 58vw;
 }
 
 
@@ -317,6 +317,11 @@ video {
 
     #h2-for-aboutus {
         font-size: 1.25vw;
+        width: 60vw;
+    }
+
+    #exceptional-p-for-aboutus {
+        width: 59.2vw;
     }
 }
 
