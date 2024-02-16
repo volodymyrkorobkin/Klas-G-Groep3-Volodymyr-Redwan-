@@ -224,7 +224,7 @@ h1 {
         
     }
 
-    h1 {
+    .h1-for-menu {
         padding-left: 24vw;
         padding-top: 1.5vw;
         font-size: 2vw;
@@ -316,6 +316,10 @@ video {
         width: 59.2vw;
     }
 }
+
+
+
+
 
 #slideshow-wrap {
     overflow: hidden;
