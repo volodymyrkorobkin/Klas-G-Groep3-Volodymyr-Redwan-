@@ -1,27 +1,16 @@
-let slidesCnt = 0;
-let activeSlide = 0;
-
 function showSlide(n) {
     let slidesWrap = document.querySelector('#slides-wrap');
-    slidesWrap.style.marginLeft = -1250 * n + 'px';
+    slidesWrap.scrollBy({
+        left: slidesWrap.clientWidth * n,
+    });
 }
 
 function nextSlide() {
-    if (activeSlide < slidesCnt - 1) {
-        activeSlide++;
-    } else {
-        activeSlide = 0;
-    }
-    showSlide(activeSlide);
+    showSlide(1);
 }
 
 function prevSlide() {
-    if (activeSlide > 0) {
-        activeSlide--;
-    } else {
-        activeSlide = slidesCnt - 1;
-    }
-    showSlide(activeSlide);
+    showSlide(-1);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
