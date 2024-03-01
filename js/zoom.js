@@ -21,32 +21,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 newImg.style.height = img.height + 'px';
 
                 document.body.appendChild(newImg);
-                img.style.opacity = '0';
+
+                newImg.addEventListener("load", function() {
+
+                    setTimeout(function() {
+                        img.style.opacity = '0';
+
+                        newImg.classList.add('zoomed');
+                        newImg.style.top = '0';
+                        newImg.style.left = '0';
+
+                        newImg.style.width = '100%';
+                        newImg.style.height = '100%';
+                    }, 1);
+
+                    setTimeout(function() {
+
+                        newImg.addEventListener('click', function() {
+                            newImg.classList.remove('zoomed');
+                            newImg.style.top = img.offsetTop - window.scrollY + 'px';
+                            newImg.style.left = img.offsetLeft - window.scrollX + 'px';
+
+                            newImg.style.width = img.width + 'px';
+                            newImg.style.height = img.height + 'px';
 
 
-                setTimeout(function() {
-                    newImg.classList.add('zoomed');
-                    newImg.style.top = '0';
-                    newImg.style.left = '0';
-
-                    newImg.style.width = '100%';
-                    newImg.style.height = '100%';
-
-                    newImg.addEventListener('click', function() {
-                        newImg.classList.remove('zoomed');
-                        newImg.style.top = img.offsetTop - window.scrollY + 'px';
-                        newImg.style.left = img.offsetLeft - window.scrollX + 'px';
-
-                        newImg.style.width = img.width + 'px';
-                        newImg.style.height = img.height + 'px';
+                            setTimeout(function() {     
+                                img.style.opacity = '1';
+                                newImg.remove();
+                            }, 250);
+                        });
+                    }, 250);
 
 
-                        setTimeout(function() {     
-                            img.style.opacity = '1';
-                            newImg.remove();
-                        }, 450);
-                    });
-                }, 1);
+                });
             }
         });
     });

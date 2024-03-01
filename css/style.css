@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    scrollbar-width: none;
 }
 
 body {
@@ -24,7 +22,7 @@ hr {
 }
 
 h1 {
-    font-size: 2.9vw;
+    font-size: 3rem;
 }
 
 a:hover {
@@ -42,6 +40,11 @@ header {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     height: 125px;
     font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    gap: 3rem;
 }
 
 footer {
@@ -113,10 +116,7 @@ header a {
 
 .gap-1 {
     gap: 1rem;
-}
-.gap-3 {
-    gap: 3rem;
-}
+}s
 .gap-50 {
     gap: 50px;
 }
@@ -148,6 +148,10 @@ img {
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* Margins and Paddings */
 .margin-10 {
@@ -166,7 +170,7 @@ img {
 
 /* Zoom functionality */
 .img-overlay {
-    transition: all 0.5s;
+    transition: all 0.25s ease-in-out;
     position: fixed;
     object-fit: contain;
 }
@@ -235,7 +239,117 @@ img {
     right: 0;
 }
 
+#footer-info img {
+    width: 60px;
+}
 
+#burger-menu-label {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px){
+    header {
+        height: 80px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .padding-50-0 {
+        padding: 25px 0;
+    }
+
+    .gap-50 {
+        gap: 25px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    #burger-menu-label {
+        display: block;
+    }
+
+
+    footer {
+        height: fit-content;
+        font-size: 16px;
+    }
+
+    #footer-info img {
+        width: 25%;
+    }
+
+    .gap-1 {
+        gap: 0.5rem;
+    }
+
+    #footer-adress {
+        margin: 0 10px;
+    }
+
+
+    #footer-logo {
+        height: unset;
+        width: 40%;
+        margin: 10px;
+        object-fit: contain;
+        margin-top: auto;
+    }
+
+    #rights {
+        font-size: 13px;
+    }
+
+    .main-margin {
+        width: 100%;
+        margin: 0;
+    }
+
+    #burger-menu-checkbox:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #F69B37;
+
+        font-size: 24px;
+        gap: 0;
+        z-index: 1;
+    }
+
+    #burger-menu-checkbox:checked ~ ul li a {
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid black;
+    }
+
+    #footer-info {
+        flex-direction: column;
+
+        font-size: 16px;
+    }
+
+    header label {
+        margin: 20px;
+    }
+
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+#footer-info {
+    width: 100%;
+    padding-top: 10px;
+}
 
 
 
@@ -298,9 +412,9 @@ img {
         font-size: 0.8vw;
     }
 
-    p {
+    /* p {
         padding: 5px;
-    }
+    } */
     
     .p-for-menu {
         margin-bottom: 1vw;
