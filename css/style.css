@@ -288,8 +288,8 @@ img {
         width: 25%;
     }
 
-    .gap-1 {
-        gap: 0.5rem;
+    footer .gap-1 {
+        gap: 0;
     }
 
     #footer-adress {
@@ -337,8 +337,7 @@ img {
 
     #footer-info {
         flex-direction: column;
-
-        font-size: 16px;
+        font-size: 15px;
     }
 
     header label {
@@ -446,6 +445,7 @@ img {
     
     .class-for-menu {
         font-size: 15px !important;
+        background-color: #F5F5F5;
     }
 
     .italicp-for-menu {
@@ -453,8 +453,7 @@ img {
     }
 
     .class-for-menu, .h1-for-menu {
-        padding: unset !important;
-        width: 95vw;
+        padding: 0 2% !important;
     }
 
     .phone-only {
@@ -465,6 +464,15 @@ img {
         margin-top: 50px;
         margin-bottom: 10px;
     }
+
+    .main-for-menu > h1.center-text{
+        margin-bottom: 25px;
+    }
+
+    .p-for-menu {
+        border-bottom: none !important;
+    }
+
 }
 
 .phone-only {

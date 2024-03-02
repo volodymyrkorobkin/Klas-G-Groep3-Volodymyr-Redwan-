@@ -33,9 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         newImg.style.width = '100%';
                         newImg.style.height = '100%';
+
                     }, 1);
 
                     setTimeout(function() {
+                        newImg.style.backdropFilter = 'brightness(0.5)';
 
                         newImg.addEventListener('click', function() {
                             newImg.classList.remove('zoomed');
@@ -44,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                             newImg.style.width = img.width + 'px';
                             newImg.style.height = img.height + 'px';
+
+                            newImg.style.backdropFilter = 'none';
 
 
                             setTimeout(function() {     
