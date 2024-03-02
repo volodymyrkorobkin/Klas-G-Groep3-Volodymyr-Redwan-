@@ -20,6 +20,8 @@ $PATH = "../";
 <?php include $PATH . 'php/header.php'; ?>
 
 <main class="main-for-menu">
+        <h1 class="center-text phone-only">Menu</h1>
+
         <img src="../assets/UX IMG.png" alt="Image of the Menu folder" id="ye-menu-foto">
         <h1 class="h1-for-menu">Fish platters</h1>
     <section class="class-for-menu">

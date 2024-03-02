@@ -116,7 +116,7 @@ header a {
 
 .gap-1 {
     gap: 1rem;
-}s
+}
 .gap-50 {
     gap: 50px;
 }
@@ -274,6 +274,10 @@ img {
         display: block;
     }
 
+    #slideshow-wrap img {
+        width: 100vw;
+    }
+
 
     footer {
         height: fit-content;
@@ -344,6 +348,127 @@ img {
     .masonry-grid {
         column-count: 2;
     }
+
+
+    .block > img {
+        width: 80vw;
+        height: calc(5/6 * 80vw);
+    }
+
+    .block > * {
+        width: 85vw;
+        font-size: 17px !important;
+    }
+
+    #slideshow-wrap {
+        height: calc(0.512 * 100vw);
+        width: 100vw;
+    }
+
+    #slides-wrap figure {
+        width: 100vw;
+    }
+
+    #prevSlide, #nextSlide {
+        font-size: 48px;
+        width: 80px;
+    }
+    
+
+    .block {
+        flex-direction: column !important;
+    }
+
+
+
+    .main-for-aboutus, .main-for-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0 !important;
+        gap: 25px;
+    }
+
+    .main-for-menu {
+        gap: 0;
+    }
+
+    .h1-for-aboutus {
+        padding: unset !important;
+        justify-self: center;
+        text-align: center;
+    }
+
+    #h2-for-aboutus {
+        font-size: 18px !important;
+        margin-bottom: -20px;
+        width: 95vw;
+    }
+
+    #exceptional-p-for-aboutus {
+        width: 95vw;
+        margin-bottom: unset !important;
+    }
+
+    .class-for-aboutus-1, .class-for-aboutus-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .class-for-aboutus-1 img, .class-for-aboutus-2 img {
+        width: 85vw !important;
+        height: calc(3/4 * 85vw) !important;
+        border-radius: 10px !important;
+        order: 1 !important;
+    }
+
+    .class-for-aboutus-1 article, .class-for-aboutus-2 article {
+        width: 90vw !important;
+        order: 2 !important;
+    }
+
+    video {
+        width: 100vw !important;
+        padding: unset !important;
+    }
+
+    br {
+        display: none;
+    }
+
+    #ye-menu-foto {
+        width: 100vw !important;
+    }
+
+    
+    .class-for-menu {
+        font-size: 15px !important;
+    }
+
+    .italicp-for-menu {
+        font-size: unset !important;
+    }
+
+    .class-for-menu, .h1-for-menu {
+        padding: unset !important;
+        width: 95vw;
+    }
+
+    .phone-only {
+        display: block !important;
+    }
+
+    .h1-for-menu {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+.phone-only {
+    display: none;
 }
 
 #footer-info {

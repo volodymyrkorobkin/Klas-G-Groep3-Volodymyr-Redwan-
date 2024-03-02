@@ -14,7 +14,9 @@ $head = [
 <?php include $PATH . 'php/head.php'; ?>
 <body>
 <?php include $PATH . 'php/header.php'; ?>
-<main class="main-margin flex-column gap-100 padding-50-0">
+<main class="main-margin flex-column gap-50 padding-50-0">
+
+    <h1 class="center-text">Home</h1>
 
     <section id="slideshow-wrap" class="shadow">
         <section id="slides-wrap" class="flex">
@@ -22,7 +24,7 @@ $head = [
                 <img src="../img/home-1.png">
             </figure>
             <figure>
-                <img src="../img/home-2.png" class="zoom">
+                <img src="../img/home-2.png">
             </figure>
         </section>
 
