@@ -1,7 +1,7 @@
 <header class="shadow">
     <section class="flex aling-center wrap-height main-margin space-between">
         <a href="<?php echo $PATH ?>" class="wrap-height">
-            <img src="<?php echo $PATH ?>assets/logo-2.svg" alt="logo" class="wrap-height">
+            <img src="<?php echo $PATH ?>assets/logo-2.svg" alt="logo" class="wrap-height" id="header-img-sty">
         </a>
         <nav class="flex align-center">
             <input type="checkbox" id="burger-menu-checkbox" class="hidden">
