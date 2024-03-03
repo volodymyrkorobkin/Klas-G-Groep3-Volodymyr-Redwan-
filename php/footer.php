@@ -1,4 +1,4 @@
-<footer class="flex-column">
+<footer class="flex-column" id="footer-sty">
     <section class="flex-column main-margin">
         <section class="flex gap-1">
             <img src="<?php echo $PATH ?>assets/logo-4.svg" alt="logo" id="footer-logo" class="margin-10-y">
@@ -25,7 +25,7 @@
                 </section>
             </section>
         </section>
-        <section class="center-text">
+        <section class="center-text" id="footer-right">
             <hr>
             <p id="rights">© 2024 Eat Fish Restaurant - All rights reserved - Developed by Redwan Yesuf Abate en Volodymyr Korobkin</p>
         </section>
