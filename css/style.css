@@ -576,7 +576,8 @@ img {
 /* Codes for About-us webpage */
 
 .main-for-aboutus {
-    margin: 0vw 18.5vw 1vw 18.5vw;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 .h1-for-aboutus {
@@ -610,17 +611,12 @@ video {
 #exceptional-p-for-aboutus {
     margin-bottom: 1.5vw;
 }
-
-#h2-for-aboutus {
-    font-size: 3vw;
-}
-
 @media screen and (min-width: 768.1px) { 
 
     .class-for-aboutus-1, .class-for-aboutus-2 {
         display: flex;
         flex-direction: row;
-        gap: 3.4vw;
+        gap: 50px;
         padding-bottom: 3.4vw;
     
     }
@@ -635,19 +631,24 @@ video {
        
     }
 
-    .class-for-aboutus-1 article, .class-for-aboutus-2 article {
-        width: 30vw;
+    .class-for-aboutus-1 article , .class-for-aboutus-2 article {
+        width: 475px;
         margin: auto ;  
     }
 
     #h2-for-aboutus {
-        font-size: 1.25vw;
-        width: 60vw;
+        font-size: 20px;
+        width: 1000px;
+        
     }
 
-    #exceptional-p-for-aboutus {
-        width: 59.2vw;
+    .class-for-aboutus-1 article p , .class-for-aboutus-2 article p {
+        font-size: 16px;
     }
+
+    /* #exceptional-p-for-aboutus {
+        width: 59.2vw;
+    } */
 }
 
 
