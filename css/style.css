@@ -488,11 +488,12 @@ img {
 
 /* Codes for Menu webpage */
  .main-for-menu {
-    margin: 0vw 22.5vw 1vw 15vw;
+    margin: 0 auto;
+    width: 1000px;
 } 
 
 #ye-menu-foto {
-    width: 55vw;
+    width: 1000px;
 }
 
 .class-for-menu {
@@ -515,12 +516,8 @@ img {
 @media screen and (min-width: 768.1px) {
    
 
-    .main-for-menu {
-        margin: 0vw 19vw 1vw 18.5vw;
-    }
-
     #ye-menu-foto {
-        width: 62vw;
+        width: 1000px;
         border-top: 1px solid black;
     }
 
@@ -529,7 +526,8 @@ img {
         justify-content: space-between;
         flex-direction: row;
         font-size: 1.2vw;
-        background-color: #f5f5f5;   
+        background-color: #f5f5f5; 
+        /* gap: 15px;  */
     }
 
     .class-for-menu article {
@@ -557,7 +555,6 @@ img {
     }
 
     .h1-for-menu {
-        padding-left: 24vw;
         padding-top: 1.5vw;
         font-size: 2vw;
     }
