@@ -73,9 +73,8 @@ header a {
 
 /* Blocks */
 .block > p {
-    text-align: center;
     justify-self: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 .block {
     align-items: center;
@@ -839,9 +838,5 @@ video {
 
 
    
-    
-    
-
-}
 
 
