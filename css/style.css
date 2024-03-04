@@ -197,7 +197,7 @@ img {
 #slideshow-wrap {
     overflow: hidden;
     position: relative;
-    height: 525px;
+    height: calc(9 / 16* 1000px);
 }
 
 #slides-wrap {
@@ -228,10 +228,13 @@ img {
     font-size: 64px;
 }
 
-#prevSlide:hover, #nextSlide:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
+@media (hover: hover) {
+    #prevSlide:hover, #nextSlide:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
 }
+
 #prevSlide {
     left: 0;
 }
@@ -249,6 +252,10 @@ img {
 
 
 @media screen and (max-width: 480px){
+    #prevSlide, #nextSlide {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: rgba(0, 0, 0, 0.7);
+    }
     header {
         height: 80px;
         font-size: 20px;
@@ -271,7 +278,7 @@ img {
     }
 
     #burger-menu-label {
-        display: block;
+        display: flex;
     }
 
     #slideshow-wrap img {
@@ -309,9 +316,9 @@ img {
         font-size: 13px;
     }
 
-    .main-margin {
-        width: 100%;
-        margin: 0;
+    .main-margin, .main-for-aboutus, .main-for-menu {
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     #burger-menu-checkbox:checked ~ ul {
@@ -341,7 +348,7 @@ img {
     }
 
     header label {
-        margin: 20px;
+        padding: 20px;
     }
 
     .masonry-grid {
@@ -357,10 +364,11 @@ img {
     .block > * {
         width: 85vw;
         font-size: 17px !important;
+        text-align: center;
     }
 
     #slideshow-wrap {
-        height: calc(0.512 * 100vw);
+        height: calc(9/16 * 100vw);
         width: 100vw;
     }
 
