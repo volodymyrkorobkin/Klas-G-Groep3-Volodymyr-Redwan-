@@ -637,7 +637,7 @@ video {
 
     .class-for-aboutus-1 article, .class-for-aboutus-2 article {
         width: 30vw;
-        padding-top: 2.4vw;   
+        margin: auto ;  
     }
 
     #h2-for-aboutus {
