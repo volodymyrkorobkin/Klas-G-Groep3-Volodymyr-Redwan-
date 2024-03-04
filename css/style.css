@@ -576,17 +576,18 @@ img {
 /* Codes for About-us webpage */
 
 .main-for-aboutus {
-    margin: 0vw 18.5vw 1vw 20vw;
+    margin: 0vw 18.5vw 1vw 18.5vw;
 }
 
 .h1-for-aboutus {
-    padding-left: 22.3vw;
+    align-items: center;
     padding-top: 0.8vw;
 }
 
 .class-for-aboutus-1 img, .class-for-aboutus-2 img {
-    width: 28vw;
-    border-radius: 1vw;
+    height: calc(475px * 2/3);
+    width: 475px;
+    border-radius: 15px;
 }
 
 .class-for-aboutus-1 img{
@@ -602,7 +603,7 @@ img {
 
 video {
     padding: 1vw 0vw;
-    width: 58vw;
+    width: 100%;
 }
 
 
@@ -619,7 +620,7 @@ video {
     .class-for-aboutus-1, .class-for-aboutus-2 {
         display: flex;
         flex-direction: row;
-        gap: 1.5vw;
+        gap: 3.4vw;
         padding-bottom: 3.4vw;
     
     }

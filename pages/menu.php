@@ -1,6 +1,12 @@
 <?php
 $PATH = "../";
 
+$head = [
+    "title" => "Eat Fish Restaurant",
+    "styles" => ["{$PATH}css/style.css"],
+    "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js"]
+];
+
 ?>
 
 <!DOCTYPE html>
