@@ -1,6 +1,12 @@
 <?php
 $PATH = "../";
 
+$head = [
+    "title" => "Eat Fish Restaurant",
+    "styles" => ["{$PATH}css/style.css"],
+    "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js"]
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +26,10 @@ $PATH = "../";
 <?php include $PATH . 'php/header.php'; ?>
 
 <main class="main-for-aboutus">
-    <h1 class="h1-for-aboutus"> About-Us</h1>
+    <h1 class="h1-for-aboutus center-text">About-Us</h1>
     <video autoplay muted loop>
         <source src="../assets/Fish-cooking video-2.mp4" type="video/mp4">
     </video>
-    
     <h2 id="h2-for-aboutus">Dive into Deliciousness: Indulge in Oceanic Delights at Our Premier Fish Restaurant, Where Every Bite Tells a Tale of Freshness and Flavor.</h2><br>
     <p id="exceptional-p-for-aboutus">At our premier fish restaurant, we invite you to immerse yourself in a culinary journey like no other. From the depths of the ocean to your plate, each dish is meticulously crafted to deliver an unparalleled dining experience. Our commitment to excellence is evident in every aspect, from sourcing the freshest seafood to the skilled hands of our chefs who transform it into delectable creations. Whether you're a seafood aficionado or new to the world of oceanic cuisine, our menu offers something for everyone to savor and enjoy. Come join us and embark on a flavorful adventure that celebrates the bounty of the sea in every mouthwatering bite.</p>
 
