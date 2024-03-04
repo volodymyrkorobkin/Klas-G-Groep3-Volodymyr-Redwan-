@@ -702,18 +702,18 @@ video {
         margin: -6.6vw 12vw 0vw 12vw ;
      }
 
-     #home-img-txt {
+     .home-img-txt {
         margin: 0vw 12vw 0vw 12vw ;
         padding: 1.35vw 0vw;
      }
 
-     #home-img-txt img{
+     .home-img-txt img{
         width: 54vw;
         height: 38vw;
         border-radius: 1.3vw;
      }
 
-     #home-img-txt p {
+     .home-img-txt p {
         width: 70vw;
         height: 38vw;
         font-size: 2.3vw;
