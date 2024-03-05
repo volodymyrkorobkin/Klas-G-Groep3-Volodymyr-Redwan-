@@ -29,7 +29,7 @@ $head = [
         <h1 class="center-text phone-only">Menu</h1>
 
         <img src="../assets/UX IMG.png" alt="Image of the Menu folder" id="ye-menu-foto">
-        <h1 class="h1-for-menu">Fish platters</h1>
+        <h1 class="h1-for-menu center-text">Fish platters</h1>
     <section class="class-for-menu">
         <article>
             <h2 id="exceptional-h-for-menu">Grilled Salmon</h2>
@@ -68,7 +68,7 @@ $head = [
             <p class="p-for-menu">$16.99</p>
         </article>
     </section>
-    <h1 class="h1-for-menu">Shrimps</h1>
+    <h1 class="h1-for-menu center-text">Shrimps</h1>
     <section class="class-for-menu">
         <article>
             <h2>Lobster Roll</h2>
@@ -105,7 +105,7 @@ $head = [
             <p class="p-for-menu">$18.99</p>
         </article>
     </section>
-    <h1 class="h1-for-menu">Appetizers</h1>
+    <h1 class="h1-for-menu center-text">Appetizers</h1>
     <section class="class-for-menu">
         <article>
             <h2>Crispy Calamari</h2>
@@ -140,7 +140,7 @@ $head = [
             <p class="p-for-menu">$15.99</p>
         </article>
     </section>
-    <h1 class="h1-for-menu">Salads</h1>
+    <h1 class="h1-for-menu center-text">Salads</h1>
     <section class="class-for-menu">
         <article>
             <h2>Grilled Halibut</h2>
@@ -175,7 +175,7 @@ $head = [
             <p class="p-for-menu">$16.99</p>
         </article>
     </section>
-    <h1 class="h1-for-menu">Octopus</h1>
+    <h1 class="h1-for-menu center-text">Octopus</h1>
     <section class="class-for-menu">
         <article>
             <h2>Seared Scallops</h2>
@@ -211,7 +211,7 @@ $head = [
         </article>
     </section>
 
-    <h1 class="h1-for-menu">Cocktails and Drinks</h1>
+    <h1 class="h1-for-menu center-text">Cocktails and Drinks</h1>
     <section class="class-for-menu">
     <article>
         <h2>Margarita</h2>
