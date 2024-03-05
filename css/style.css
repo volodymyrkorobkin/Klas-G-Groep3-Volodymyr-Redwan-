@@ -195,7 +195,7 @@ img {
 #slideshow-wrap {
     overflow: hidden;
     position: relative;
-    height: 525px;
+    height: calc(9 / 16* 1000px);
 }
 
 #slides-wrap {
@@ -226,10 +226,13 @@ img {
     font-size: 64px;
 }
 
-#prevSlide:hover, #nextSlide:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
+@media (hover: hover) {
+    #prevSlide:hover, #nextSlide:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
 }
+
 #prevSlide {
     left: 0;
 }
@@ -247,6 +250,10 @@ img {
 
 
 @media screen and (max-width: 480px){
+    #prevSlide, #nextSlide {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: rgba(0, 0, 0, 0.7);
+    }
     header {
         height: 80px;
         font-size: 20px;
@@ -269,7 +276,7 @@ img {
     }
 
     #burger-menu-label {
-        display: block;
+        display: flex;
     }
 
     #slideshow-wrap img {
@@ -307,9 +314,9 @@ img {
         font-size: 13px;
     }
 
-    .main-margin {
-        width: 100%;
-        margin: 0;
+    .main-margin, .main-for-aboutus, .main-for-menu {
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     #burger-menu-checkbox:checked ~ ul {
@@ -339,7 +346,7 @@ img {
     }
 
     header label {
-        margin: 20px;
+        padding: 20px;
     }
 
     .masonry-grid {
@@ -355,10 +362,11 @@ img {
     .block > * {
         width: 85vw;
         font-size: 17px !important;
+        text-align: center;
     }
 
     #slideshow-wrap {
-        height: calc(0.512 * 100vw);
+        height: calc(9/16 * 100vw);
         width: 100vw;
     }
 
@@ -486,11 +494,12 @@ img {
 
 /* Codes for Menu webpage */
  .main-for-menu {
-    margin: 0vw 22.5vw 1vw 15vw;
+    margin: 0 auto;
+    width: 1000px;
 } 
 
 #ye-menu-foto {
-    width: 55vw;
+    width: 1000px;
 }
 
 .class-for-menu {
@@ -513,12 +522,8 @@ img {
 @media screen and (min-width: 768.1px) {
    
 
-    .main-for-menu {
-        margin: 0vw 19vw 1vw 18.5vw;
-    }
-
     #ye-menu-foto {
-        width: 62vw;
+        width: 1000px;
         border-top: 1px solid black;
     }
 
@@ -527,7 +532,8 @@ img {
         justify-content: space-between;
         flex-direction: row;
         font-size: 1.2vw;
-        background-color: #f5f5f5;   
+        background-color: #f5f5f5; 
+        /* gap: 15px;  */
     }
 
     .class-for-menu article {
@@ -555,7 +561,6 @@ img {
     }
 
     .h1-for-menu {
-        padding-left: 24vw;
         padding-top: 1.5vw;
         font-size: 2vw;
     }
