@@ -841,3 +841,80 @@ video {
 
 
 }
+
+
+@media screen and (max-width: 480px) {
+
+    .reserveren-p, form#reserveren {
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .reserveren-p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    form#reserveren {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #F69B37;
+
+        font-size: 22px;
+    }
+
+    form#reserveren section {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    #date-time {
+        flex-direction: row !important;
+        gap: 30px;
+    }
+
+    #date-time section {
+        width: 100%;
+    }
+
+    #aantalPersonenBox {
+        width: calc(50% - 15px);
+    }
+
+    #accepteerBox {
+        flex-direction: row !important;
+
+        font-size: 18px;   
+        gap: 10px; 
+    }
+
+    form#reserveren input[type="submit"] {
+        height: 50px;
+        background-color: white;
+        border-radius: 30px;
+        border-width: 0;
+        font-size: 24px;
+    }
+
+    form#reserveren input, select {
+        height: 40px;
+        border-radius: 5px;
+        border-width: 0;
+        padding: 0 10px;
+
+        font-size: 20px;
+    }
+
+    #accepteer {
+        width: 40px !important;
+        height: 40px !important;
+        margin: auto 0 !important;
+    }
+
+    #accepteerBox label {
+        flex: 1;
+    }
+}
