@@ -12,7 +12,3 @@ function nextSlide() {
 function prevSlide() {
     showSlide(-1);
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    slidesCnt = document.querySelector('#slides-wrap').childElementCount;
-});
