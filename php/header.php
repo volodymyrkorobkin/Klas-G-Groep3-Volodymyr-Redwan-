@@ -1,5 +1,5 @@
 <header class="shadow ">
-    <section class="flex aling-center wrap-height main-margin space-between">
+    <section class="flex aling-center wrap-height main-margin space-between tablet-header">
         <a href="<?php echo $PATH ?>" class="wrap-height">
             <img src="<?php echo $PATH ?>assets/logo-2.svg" alt="logo" class="wrap-height" id="header-img-sty">
         </a>

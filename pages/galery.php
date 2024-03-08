@@ -17,7 +17,7 @@ $head = [
     <?php include $PATH . 'php/header.php'; ?>
     <main class="flex-column gap-50 padding-50-0">
 
-        <h1 class="center-text">Galerij</h1>
+        <h1 class="center-text tablet-only">Galerij</h1>
 
         <section class="masonry-grid">
             <img src="../img/A_grilled_salmon_fillet_with_lemon_slices_and_dill.png" class="zoom">
