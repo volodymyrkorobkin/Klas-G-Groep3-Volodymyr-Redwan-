@@ -2,9 +2,9 @@
 $PATH = "../";
 
 $head = [
-    "title" => "Eat Fish Restaurant",
+    "title" => "Reserveren - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
-    "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js", "{$PATH}js/reed-more.js"]
+    "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js", "{$PATH}js/reed-more.js", "{$PATH}js/reserveren.js"]
 ];
 
 ?>
@@ -15,23 +15,10 @@ $head = [
 <body>
 <?php include $PATH . 'php/header.php'; ?>
 <main class="main-margin flex-column gap-50 padding-50-0">
-
-<!-- 
-• De gegevens die ingevuld moeten worden op het formulier zijn:
-o Voornaam, tussenvoegsel, achternaam, telefoonnummer, emailadres, aantal
-personen waar de reservering voor is, de tijd en datum van reservering.
-Zorg dat ze een keuze kunnen maken per uur.
-• Er moet voldaan worden aan de AVG wet, er moet dus een scherm zijn met daarin de
-verantwoording van de AVG wet. (meer info hierover in de map van het project)
-• Na het invullen van het formulier moet de ingevulde gegevens verwerkt worden
-en getoond worden op een nieuwe pagina of pop-up met daarin bedankt voor
-uw reservering en de naam, telefoonnummer, email adres, datum, tijd en het aantal
-personen waarvoor de klant gereserveerd heeft.
-• Extra zorg dat de klant automatisch een mailtje krijgt met de reservering. -->
     <h1 class="center-text">Reserveren</h1>
     <p class="reserveren-p">Om een tafel voor u te reserveren, hebben we uw gegevens nodig. Vul dit reserveringsformulier in. U ontvangt een bevestigingsmail van uw reservering.</p>
 
-    <form action="" id="reserveren">
+    <form action="reservation-overview.php" id="reserveren">
         <section>
             <label for="voornaam">Voornaam</label>
             <input type="text" id="voornaam" name="voornaam" required>
