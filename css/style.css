@@ -572,11 +572,6 @@ img {
 
 /* Codes for About-us webpage */
 
-.main-for-aboutus {
-    margin: 0 auto;
-    width: 1000px;
-}
-
 .h1-for-aboutus {
     align-items: center;
     padding-top: 0.8vw;
@@ -660,8 +655,11 @@ video {
 
      /* Styling for Header and Footer */
 
+    .tablet-header
+
      #header-img-sty {
-        width: 44.55vw;
+        /* width: 44.55vw; */
+        width: 342px;
         height: auto;
         padding: 0vw 0vw 0vw 8vw;
      }
@@ -681,24 +679,21 @@ video {
      
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /* styling for Home Webpage */
 
-     .center-text {
+     .tablet-only {
         display: none;
      }
 
+     .tablet-home-main {
+        margin: 0 auto;
+        width: 900px;
+     }
+
      #slideshow-wrap {
-        margin: -6.6vw 12vw 0vw 12vw ;
+        /* margin: -6.6vw 12vw 0vw 12vw ; */
+        width: 900px;
+       
      }
 
      .home-img-txt {
@@ -831,7 +826,7 @@ video {
         margin-top: -6.48vw;
     }
 
-    
+}    
 
 
    

@@ -25,7 +25,7 @@ $head = [
 <body>
 <?php include $PATH . 'php/header.php'; ?>
 
-<main class="main-for-aboutus">
+<main class="main-for-aboutus main-margin   ">
     <h1 class="h1-for-aboutus center-text">About-Us</h1>
     <video autoplay muted loop>
         <source src="../assets/Fish-cooking video-2.mp4" type="video/mp4">
