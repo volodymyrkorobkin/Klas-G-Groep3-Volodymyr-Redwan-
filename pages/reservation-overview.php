@@ -1,5 +1,8 @@
 <?php
 $PATH = "../";
+
+include $PATH . "php/email.php";
+
 $head = [
     "title" => "Reservation overview - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
@@ -24,10 +27,22 @@ $datum = $_GET['datum'];
 $time = $_GET['time'];
 $aantalPersonen = $_GET['aantalPersonen'];
 
-//Na het invullen van het formulier moet de ingevulde gegevens verwerkt worden
-// en getoond worden op een nieuwe pagina of pop-up met daarin bedankt voor
-// uw reservering en de naam, telefoonnummer, email adres, datum, tijd en het aantal
-// personen waarvoor de klant gereserveerd heeft.
+
+$receiverName = $voornaam . " " . ($tussenvoegsel ? $tussenvoegsel . " " : "") . $achternaam;
+$subject = "Bevestiging van uw reservering";
+$message = "<h1>Bedankt voor uw reservering!</h1>";
+$message .= "<p>Uw reservering is bevestigd. We waarderen het dat u ons heeft gekozen.</p>";
+$message .= "<p><strong>Naam:</strong> {$receiverName}</p>";
+$message .= "<p><strong>Telefoonnummer:</strong> {$telefoonnummer}</p>";
+$message .= "<p><strong>Email:</strong> {$email}</p>";
+$message .= "<p><strong>Datum:</strong> {$datum}</p>";
+$message .= "<p><strong>Tijd:</strong> {$time}</p>";
+$message .= "<p><strong>Aantal personen:</strong> {$aantalPersonen}</p>";
+$message .= "<p>We kijken ernaar uit u te verwelkomen in ons restaurant.</p>";
+
+
+sendEmail($email, $receiverName, $subject, $message);
+
 
 ?>
 

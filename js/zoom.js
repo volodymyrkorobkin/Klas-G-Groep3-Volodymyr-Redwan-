@@ -2,8 +2,6 @@
 // Een script dat ervoor zorgt dat een afbeelding kan worden vergroot door erop te klikken.
 // Gemaakt door: Volodymyr Korobkin
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     var imgs = document.querySelectorAll('.zoom');
     imgs.forEach(function(img) {
