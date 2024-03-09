@@ -42,7 +42,7 @@ $head = [
         <section id="date-time">
             <section>
                 <label for="datum">Datum</label>
-                <input type="date" id="datum" name="datum" required>
+                <input type="date" id="datum" name="datum" min="<?php echo date('Y-m-d'); ?>" required>
             </section>
             <section>
                 <label for="time">Tijd</label>
