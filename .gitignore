@@ -1,4 +1,3 @@
 *.zip
 
-/vendor/
 /php/password.txt
