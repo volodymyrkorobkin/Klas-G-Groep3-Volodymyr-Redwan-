@@ -27,6 +27,10 @@ a:hover {
     cursor: pointer;
 }
 
+table {
+    border-spacing: 0;
+}
+
 
 .main-margin {
     width: 1000px;
