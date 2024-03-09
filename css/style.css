@@ -865,11 +865,11 @@ video {
 
     #date-time {
         flex-direction: row !important;
-        gap: 30px;
+        gap: 20px !important;
     }
 
     #date-time section {
-        width: 100%;
+        width: 47%;
     }
 
     #aantalPersonenBox {
@@ -878,9 +878,8 @@ video {
 
     #accepteerBox {
         flex-direction: row !important;
-
         font-size: 18px;   
-        gap: 10px; 
+        gap: 10px !important;
     }
 
     form#reserveren input[type="submit"] {

@@ -10,6 +10,7 @@
                 <li><a href="<?php echo $PATH ?>pages/about-us.php" class="no-decoration">About</a></li>
                 <li><a href="<?php echo $PATH ?>pages/menu.php" class="no-decoration">Menu</a></li>
                 <li><a href="<?php echo $PATH ?>pages/galery.php" class="no-decoration">Galerij</a></li>
+                <li><a href="<?php echo $PATH ?>pages/reserveren.php" class="no-decoration">Reserveren</a></li>
             </ul>
             <label for="burger-menu-checkbox" id="burger-menu-label">
                 <img src="<?php echo $PATH ?>assets/burger-menu.svg" alt="burger-menu" id="burger-menu">
