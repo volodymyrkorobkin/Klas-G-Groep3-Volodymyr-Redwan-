@@ -15,7 +15,7 @@ $head = [
 
 <body>
     <?php include $PATH . 'php/header.php'; ?>
-    <main class="flex-column gap-50 padding-50-0">
+    <main class="flex-column gap-50 padding-50-0 tab-gallerij " >
 
         <h1 class="center-text tablet-only">Galerij</h1>
 
