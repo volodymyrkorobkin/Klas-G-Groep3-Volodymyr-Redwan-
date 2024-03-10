@@ -14,38 +14,38 @@ $head = [
 <?php include $PATH . 'php/head.php'; ?>
 <body>
 <?php include $PATH . 'php/header.php'; ?>
-<main class="main-margin flex-column gap-50 padding-50-0">
+<main class="main-margin flex-column gap-50 padding-50-0 main-reserve">
     <h1 class="center-text">Reserveren</h1>
     <p class="reserveren-p">Om een tafel voor u te reserveren, hebben we uw gegevens nodig. Vul dit reserveringsformulier in. U ontvangt een bevestigingsmail van uw reservering.</p>
 
     <form action="reservation-overview.php" id="reserveren">
-        <section>
-            <label for="voornaam">Voornaam</label>
+        <section class="reserveren-sec">
+            <label for="voornaam">Voornaam:</label>
             <input type="text" id="voornaam" name="voornaam" required>
         </section>
-        <section>
-            <label for="tussenvoegsel">Tussenvoegsel</label>
+        <section class="reserveren-sec" >
+            <label for="tussenvoegsel">Tussenvoegsel:</label>
             <input type="text" id="tussenvoegsel" name="tussenvoegsel">
         </section>
-        <section>
-            <label for="achternaam">Achternaam</label>
+        <section class="reserveren-sec" >
+            <label for="achternaam">Achternaam:</label>
             <input type="text" id="achternaam" name="achternaam" required>
         </section>
-        <section>
-            <label for="telefoonnummer">Telefoonnummer</label>
+        <section class="reserveren-sec" >
+            <label for="telefoonnummer">Telefoonnummer:</label>
             <input type="tel" id="telefoonnummer" name="telefoonnummer" required>
         </section>
-        <section>
-            <label for="email">Emailadres</label>
+        <section class="reserveren-sec" >
+            <label for="email">Emailadres:</label>
             <input type="email" id="email" name="email" required>
         </section>
         <section id="date-time">
             <section>
-                <label for="datum">Datum</label>
+                <label for="datum">Datum:</label>
                 <input type="date" id="datum" name="datum" min="<?php echo date('Y-m-d'); ?>" required>
             </section>
             <section>
-                <label for="time">Tijd</label>
+                <label for="time">Tijd:</label>
                 <select name="time" id="time">
                     <?php 
                         for ($i = 12; $i < 24; $i++) {
@@ -56,7 +56,7 @@ $head = [
             </section>
         </section>
         <section id="aantalPersonenBox">
-            <label for="aantalPersonen">Aantal personen</label>
+            <label for="aantalPersonen">Aantal personen:</label>
             <select name="aantalPersonen" id="aantalPersonen" required>
                 <?php
                     for ($i = 1; $i <= 20; $i++) {
@@ -69,7 +69,7 @@ $head = [
             <input name="accepteer" type="checkbox" id="accepteer" required>
             <label for="accepteer">Ik accepteer de <a href="privacy.php">privacyvoorwaarden</a> en stem in met de verwerking van mijn gegevens voor mijn reservering.</label>
         </section>
-        <section>
+        <section id="submit-knop-res">
             <input name="submit" class="button" type="submit" value="Reserveren">
         </section>
     </form>
