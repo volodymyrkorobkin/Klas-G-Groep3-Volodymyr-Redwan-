@@ -2,35 +2,16 @@
 $PATH = "../";
 
 $head = [
-<<<<<<< HEAD
-    "title" => "Eat Fish Restaurant",
-    "styles" => ["{$PATH}css/style.css"],
-    "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js"]
-=======
     "title" => "About us - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
     "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js", "{$PATH}js/reed-more.js"]
->>>>>>> ef3571524f4c804b3226ba0df6a941574273f647
 ];
 
 ?>
 
 <!DOCTYPE html>
 <html lang="nl">
-<<<<<<< HEAD
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Redwan Yesuf Abate">
-    <title><?php echo $head["title"] ?></title>
-    <script src="../js/zoom.js"></script>
-    <script src="../js/reed-more.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-=======
 <?php include $PATH . 'php/head.php'; ?>
->>>>>>> ef3571524f4c804b3226ba0df6a941574273f647
 
 
 <body>

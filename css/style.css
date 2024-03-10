@@ -677,6 +677,20 @@ video {
         border: 0.8px solid black;
     }
 
+    #reservation-overview {
+        width: 860px;
+        margin: 0 auto;
+        font-size: 20px;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #reservation-overview p {
+        padding: 5px;
+        
+    }
+
     .reserveren-sec {
         display: flex;
         padding: 0px 0px 25px 0px;
