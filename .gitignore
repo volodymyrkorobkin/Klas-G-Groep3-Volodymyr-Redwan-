@@ -1,3 +1,7 @@
 *.zip
 
+<<<<<<< HEAD
 /php/password.txt
+=======
+/php/password.php
+>>>>>>> ef3571524f4c804b3226ba0df6a941574273f647
