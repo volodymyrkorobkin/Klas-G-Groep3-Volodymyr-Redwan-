@@ -609,10 +609,11 @@ video {
     width: 100%;
 }
 
-
 #exceptional-p-for-aboutus {
     margin-bottom: 1.5vw;
 }
+
+
 @media screen and (min-width: 768.1px) { 
 
     .class-for-aboutus-1, .class-for-aboutus-2 {
@@ -651,6 +652,129 @@ video {
     /* #exceptional-p-for-aboutus {
         width: 59.2vw;
     } */
+
+
+    /* styling for Reserving webpage*/
+    .main-reserve {
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    .reserveren-p {
+        /* width: 70vw; */
+        font-size: 23px;
+        width: 860px;
+        margin: 0 auto;
+    }
+
+    #reserveren {
+        /* margin: 0px 40px 0px 0px; */
+        width: 780px;
+        margin: 0 auto;
+        padding: 20px 10px 0px 10px;
+        font-size: 23px;
+        background-color: #F69B37;
+        border: 0.8px solid black;
+    }
+
+    .reserveren-sec {
+        display: flex;
+        padding: 0px 0px 25px 0px;
+        justify-content: space-between;
+        width: 720px;
+        margin: 0 auto;
+
+    }
+
+    .reserveren-sec input {
+        width: 500px;
+        height: 34px;
+        
+    }
+
+    .reserveren-sec label {
+        margin-right: 10px;
+        width: 230px;
+    }
+
+    #date-time {
+        display: flex;
+        justify-content: space-between;
+        width: 720px ;
+        margin: 0 auto;
+        padding: 0px 0px 20px 0px;
+
+    }
+
+    #date-time label, #aantalPersonenBox label {
+        padding-right: 25px;
+    }
+
+    #date-time input {
+        width: 145px;
+        font-size: 18px;
+        height: 29px;
+    }
+
+    #date-time select {
+        width: 145px;
+        font-size: 18px;
+        height: 29px;
+    }
+
+    #aantalPersonenBox {
+        width: 720px ;
+        margin: 0 auto;
+        padding: 0px 0px 20px 0px;
+    }
+
+    #aantalPersonenBox select {
+        width: 85px;
+        font-size: 18px;
+        height: 29px;
+    }
+
+    #accepteerBox {
+        width: 720px ;
+        margin: 0 auto;
+        padding: 30px 0px 23px 0px;
+    }
+
+    #accepteerBox input {
+        height: 20px;
+        width: 20px;
+    }
+
+    #submit-knop-res {
+        text-align: center;
+        padding: 30px 0px 23px 0px;
+
+    }
+
+    #submit-knop-res input {
+        width: 405px;
+        height: 42px;
+        font-size: 20px;
+        background-color: white;
+        border-radius: 8px;
+        border-width: 0;
+    }
+
+    #submit-knop-res input:hover {
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
+        background-color: #2B98DE;
+        /* transition-duration: 0.5s; */
+        color: white;
+        /* opacity: 7; */
+    }
+
+
+
+   
+
+
+
+
 }
 
 
