@@ -16,7 +16,13 @@ function sendEmail($reciever, $receiverName, $subject, $message)
     $mail->Username = 'eatfishnl@gmail.com';
 
     global $PATH;
-    $mail->Password = file_get_contents($PATH . 'php/password.txt');
+    $file = fopen($PATH . 'php/password.php', 'r');
+    while (!feof($file)) {
+        $line = fgets($file);
+    }
+    $password = $line;
+    $mail->Password = $password;
+    fclose($file);
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 

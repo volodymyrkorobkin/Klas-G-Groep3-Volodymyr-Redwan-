@@ -2,7 +2,7 @@
 $PATH = "../";
 
 $head = [
-    "title" => "Eat Fish Restaurant",
+    "title" => "Menu - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
     "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js"]
 ];
@@ -11,15 +11,7 @@ $head = [
 
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Redwan Yesuf Abate">
-    <title><?php echo $head["title"] ?></title>
-    <script src="../js/zoom.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+<?php include $PATH . 'php/head.php'; ?>
 
 
 <body>
@@ -28,7 +20,7 @@ $head = [
 <main class="main-for-menu">
         <h1 class="center-text phone-only">Menu</h1>
 
-        <img src="../assets/UX IMG.png" alt="Image of the Menu folder" id="ye-menu-foto">
+        <img src="../img/UX IMG.png" alt="Image of the Menu folder" id="ye-menu-foto">
         <h1 class="h1-for-menu center-text">Fish platters</h1>
     <section class="class-for-menu">
         <article>
