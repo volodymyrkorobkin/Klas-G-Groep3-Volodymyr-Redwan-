@@ -763,44 +763,36 @@ video {
     #submit-knop-res input:hover {
         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
         background-color: #2B98DE;
-        /* transition-duration: 0.5s; */
         color: white;
-        /* opacity: 7; */
     }
 
-
-
-   
-
-
-
+    .privacy {
+        font-size: 20px;
+        padding-left: 30px;
+        width: 860px;
+        margin: 0 auto;
+    }
 
 }
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
      /* Styling for Header and Footer */
 
-    .tablet-header
+
+    
 
      #header-img-sty {
         /* width: 44.55vw; */
         width: 342px;
-        height: auto;
-        padding: 0vw 0vw 0vw 8vw;
+        height: 125px;
+        padding: 0vw 0vw 0vw 50px;
      }
 
-     .no-decoration {
-        padding: 0vw 5vw 0vw 0vw;
-     }
+     /* .no-decoration {
+        padding: 0vw 0vw 0vw 0vw;
+     } */
 
      #footer-right {
         display: block;
@@ -831,21 +823,20 @@ video {
      }
 
      .home-img-txt {
-        margin: 0vw 12vw 0vw 12vw ;
-        padding: 1.35vw 0vw;
+        margin: 5px auto;
+        width: 900px;
+        gap: 40px;
      }
 
      .home-img-txt img{
-        width: 54vw;
-        height: 38vw;
-        border-radius: 1.3vw;
+        border-radius: 15px;
+        width: 400px;
+        height: calc(400px* 2/3);
      }
 
      .home-img-txt p {
-        width: 70vw;
-        height: 38vw;
-        font-size: 2.3vw;
-        /* border-radius: 1.3vw; */
+        font-size: 16px;
+        /* padding: 4px auto; */
      }
 
 
@@ -853,49 +844,48 @@ video {
      /* styling for About Webpage */
 
      .main-for-aboutus {
-        margin: 0vw 11vw 1vw 11vw;
+        margin: 0 auto;
+        width: 900px;
     }
 
     .h1-for-aboutus {
         display: none;
     }
 
-    .main-for-aboutus video,  #ye-menu-foto {
-        width: 140vw;
-        height: auto;
-    }
-
     .main-for-aboutus video {
-        margin-top: -0.95vw;
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 900px;
+        
     }
 
     #h2-for-aboutus {
-        font-size: 3.3vw;
+        font-size: 25px;
     }
 
     #exceptional-p-for-aboutus {
-        font-size: 2.45vw;
+        font-size: 20px;
         margin-bottom: 5vw;
     }
 
     .class-for-aboutus-1, .class-for-aboutus-2 {
         display: flex;
         flex-direction: row;
-        gap: 3vw;
+        gap: 40px;
         padding-bottom: 3.4vw;
     
     }
 
     .class-for-aboutus-1 img{
         order: 1;
-        width: 50vw;
-        height: 30vw;
+        width: 400px;
+        height: calc(400px* 2/3);
        
     }
 
     .class-for-aboutus-2 img{
-        width: 50vw;
-        height: 30vw;
+        width: 400px;
+        height: calc(400px* 2/3);
        
     }
 
@@ -905,39 +895,53 @@ video {
     }
 
     .class-for-aboutus-1 article, .class-for-aboutus-2 article {
-        width: 90vw;
+        width: 480px;
+        height: 230px;
         padding-top: 2vw;   
     }
 
     .class-for-aboutus-1 article p, .class-for-aboutus-2 article p {
-        font-size: 2.45vw; 
+        font-size: 18px; 
     }
 
     .class-for-aboutus-1, .class-for-aboutus-2 {
-        margin-top: 6vw; 
+        margin-top: 40px; 
     }
 
 
 
     /* Styling for Menu */
     .main-for-menu {
-        margin: 0vw 11vw 1vw 11vw;
+        margin: 0 auto;
+        width: 768px;
     }
 
     .class-for-menu {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        font-size: 1.6vw;
-        background-color: #f5f5f5;   
+        font-size: 14px;
+        background-color: #f5f5f5;
+        gap: 10px; 
+        /* border: solid black 1px;   */
+        padding-top: 8px;
+        margin-bottom: 15px;
+    }
+
+    #ye-menu-foto {
+        margin: 5px auto;
+        width: 768px;
     }
 
     .class-for-menu article {
-        width: 45vw;
+        width: 768px;
+        border: solid black 1px; 
     }
 
     .class-for-menu h2 {
-        font-size: 2.8vw;
+        font-size: 17px;
+        /* color: #F69B37; */
+        border-bottom: solid black 1px;
     }
 
     .italicp-for-menu {
@@ -946,9 +950,16 @@ video {
     }
 
     .h1-for-menu {
-        padding-top: 3vw; 
-        padding-bottom: 1vw;
-        font-size: 4.1vw;
+        padding-top: 25px; 
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .p-for-menu {
+        border-bottom: none;
+        font-weight: bold;
+        /* color: #F69B37; */
+        padding-top: 8px;
         text-align: center;
     }
 
@@ -956,11 +967,17 @@ video {
     /* Styling for Gallery */
 
     .masonry-grid {
-        margin: 0vw 11vw 0vw 11vw;
-        margin-top: -6.48vw;
+        margin: 0 auto;
+        width: 768px;
     }
 
-}    
+    .tab-gallerij {
+        padding: 50px auto;
+        margin-top: -35px;
+        
+    }
+
+}
 
 
 @media screen and (max-width: 480px) {
