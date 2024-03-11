@@ -41,7 +41,18 @@ $message .= "<p><strong>Aantal personen:</strong> {$aantalPersonen}</p>";
 $message .= "<p>We kijken ernaar uit u te verwelkomen in ons restaurant.</p>";
 
 
-sendEmail($email, $receiverName, $subject, $message);
+if (!isset($_GET['emailSent'])) {
+    sendEmail($email, $receiverName, $subject, $message);
+    $link = "reservation-overview.php?";
+    foreach ($keys as $key) {
+        $link .= $key . "=" . $_GET[$key] . "&";
+    }
+    $link .= "emailSent";
+
+    header("Location: $link");
+}
+
+
 
 
 ?>
