@@ -2,13 +2,8 @@
 // Een script dat ervoor zorgt dat een paragraaf kan worden uitgeklapt door op een link te klikken.
 // Gemaakt door: Volodymyr Korobkin
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth > 480) {
-        return;
-    }
-
+let oldWidth;
+function fillReadMore() {
     document.querySelectorAll('p.reed-more').forEach(function(p) {
         let reedMore = document.createElement('span');
 
@@ -32,5 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
         p.appendChild(reedMore);
     });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 480) {
+        fillReadMore();
+    }
+    oldWidth = window.innerWidth;
+});
+
+
+window.addEventListener('resize', function() {
+    if (oldWidth <= 480 && window.innerWidth > 480) {
+        document.querySelectorAll('p.reed-more').forEach(function(p) {
+            p.querySelector('span').click();
+        });
+    }
+    if (oldWidth > 480 && window.innerWidth <= 480) {
+        fillReadMore();
+    }
+
+    oldWidth = window.innerWidth;
 });
 
