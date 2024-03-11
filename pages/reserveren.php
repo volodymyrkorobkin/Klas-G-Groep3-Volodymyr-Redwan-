@@ -18,7 +18,7 @@ $head = [
     <h1 class="center-text">Reserveren</h1>
     <p class="reserveren-p">Om een tafel voor u te reserveren, hebben we uw gegevens nodig. Vul dit reserveringsformulier in. U ontvangt een bevestigingsmail van uw reservering.</p>
 
-    <form action="reservation-overview.php" id="reserveren">
+    <form action="reservation-overview.php" id="reserveren" class="shadow">
         <section class="reserveren-sec">
             <label for="voornaam">Voornaam:</label>
             <input type="text" id="voornaam" name="voornaam" required>
