@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('resize', function() {
     if (oldWidth <= 480 && window.innerWidth > 480) {
-        document.querySelectorAll('p.reed-more').forEach(function(p) {
-            p.querySelector('span').click();
+        document.querySelectorAll('p.reed-more > span').forEach(function(span) {
+            span.click();
         });
     }
     if (oldWidth > 480 && window.innerWidth <= 480) {
