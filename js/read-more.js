@@ -4,8 +4,8 @@
 
 let oldWidth;
 function fillReadMore() {
-    document.querySelectorAll('p.reed-more').forEach(function(p) {
-        let reedMore = document.createElement('span');
+    document.querySelectorAll('p.readmore').forEach(function(p) {
+        let readMore = document.createElement('span');
 
         let text = p.textContent;
         let textShort = text.substring(0, 130);
@@ -18,14 +18,14 @@ function fillReadMore() {
 
         p.textContent = textShort + '...';
 
-        reedMore.textContent = ' lees meer';
-        reedMore.style.color = '#0550ae';
+        readMore.textContent = ' lees meer';
+        readMore.style.color = '#0550ae';
 
-        reedMore.addEventListener('click', function() {
+        readMore.addEventListener('click', function() {
             p.textContent = text;
         });
 
-        p.appendChild(reedMore);
+        p.appendChild(readMore);
     });
 }
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('resize', function() {
     if (oldWidth <= 480 && window.innerWidth > 480) {
-        document.querySelectorAll('p.reed-more > span').forEach(function(span) {
+        document.querySelectorAll('p.readmore > span').forEach(function(span) {
             span.click();
         });
     }
