@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (!mouseEvent) {
                 mouseEvent = setInterval(function() {
-                    console.log(x, y);
-        
                     newX = x * 2 - 1;
                     newY = y * 2 - 1;
         
