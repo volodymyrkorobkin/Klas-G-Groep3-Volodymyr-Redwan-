@@ -61,7 +61,7 @@ header {
     font-size: 24px;
     grid-area: header;
 
-    z-index: 9999;
+    z-index: 9;
     position: absolute;
     top: 0;
     width: 100%;
@@ -206,6 +206,7 @@ header a {
     transition: all 0.25s ease-in-out;
     position: fixed;
     object-fit: contain;
+    z-index: 10;
 }
 
 .zoom:hover, .zoomed:hover {

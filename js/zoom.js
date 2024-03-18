@@ -3,13 +3,28 @@
 // Gemaakt door: Volodymyr Korobkin
 
 document.addEventListener('DOMContentLoaded', function() {
-    var imgs = document.querySelectorAll('.zoom');
+    const imgs = document.querySelectorAll('.zoom');
     imgs.forEach(function(img) {
         img.addEventListener('click', function() {
             if (img.classList.contains('zoomed')) {
                 img.classList.remove('zoomed');
             } else {
-                var newImg = document.createElement('img');
+                let backGround = document.createElement('div');
+                backGround.style.position = 'fixed';
+                backGround.style.top = '0';
+                backGround.style.left = '0';
+                backGround.style.width = '100%';
+                backGround.style.height = '100%';
+
+                backGround.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                backGround.style.transition = 'all 0.25s';
+
+                document.body.appendChild(backGround);
+
+
+
+
+                let newImg = document.createElement('img');
                 newImg.classList.add('img-overlay');
 
                 newImg.src = img.src;
@@ -32,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         newImg.style.width = '100%';
                         newImg.style.height = '100%';
 
+                        backGround.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+
                     }, 1);
 
                     setTimeout(function() {
-                        newImg.style.backdropFilter = 'brightness(0.5)';
-
                         newImg.addEventListener('click', function() {
                             newImg.classList.remove('zoomed');
                             newImg.style.top = img.offsetTop - window.scrollY + 'px';
@@ -45,8 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             newImg.style.width = img.width + 'px';
                             newImg.style.height = img.height + 'px';
 
-                            newImg.style.backdropFilter = 'none';
+                            backGround.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 
+                            setTimeout(function() {
+                                backGround.remove();
+                            }, 200);
 
                             setTimeout(function() {     
                                 img.style.opacity = '1';
