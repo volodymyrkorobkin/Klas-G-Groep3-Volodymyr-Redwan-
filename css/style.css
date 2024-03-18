@@ -52,9 +52,7 @@ img {
     margin: 0 auto;
 }
 
-/* .phone-only {
-    display: none;
-} */
+
 
 /* Header and Footer */
 header {
@@ -514,6 +512,11 @@ header a {
 
 }
 
+/* Codes for Home Webpage */
+.home-img-txt {
+    margin: 2.1vw 0vw;
+}
+
 
 
 /* Codes for Menu webpage */
@@ -589,9 +592,6 @@ header a {
         font-size: 2vw;
     }
 
-    /* #exceptional-h-for-menu {
-        padding-top: 3vw;
-    } */
 
     #space-with-footer {
         margin-bottom: 30px;
@@ -634,7 +634,7 @@ video {
 }
 
 #exceptional-p-for-aboutus {
-    margin-bottom: 1.5vw;
+    margin-bottom: 4.5vw;
 }
 
 
@@ -673,28 +673,24 @@ video {
         font-size: 16px;
     }
 
-    /* #exceptional-p-for-aboutus {
-        width: 59.2vw;
-    } */
+    
 
 
     /* styling for Reserving webpage*/
+    
     .reserveren-p {
-        /* width: 70vw; */
         font-size: 23px;
-        width: 90%;
+        width: 780px;
         margin: 0 auto;
     }
 
     #reserveren {
-        /* margin: 0px 40px 0px 0px; */
         width: 780px;
         margin: 0 auto;
         padding: 20px 10px 0px 10px;
         font-size: 23px;
         background-color: #F69B37;
-        /* border: 0.8px solid black; */
-        border-radius: 8px;
+        border-radius: 16px;
     }
 
     #reservation-overview {
@@ -723,6 +719,8 @@ video {
     .reserveren-sec input {
         width: 500px;
         height: 34px;
+        border: 0.8px solid black;
+        border-radius: 8px;
         
     }
 
@@ -748,12 +746,16 @@ video {
         width: 175px;
         font-size: 18px;
         height: 29px;
+        border: 0.8px solid black;
+        border-radius: 5px ;
     }
 
     #date-time select {
         width: 145px;
         font-size: 18px;
         height: 29px;
+        border: 0.8px solid black;
+        border-radius: 5px ;
     }
 
     #aantalPersonenBox {
@@ -766,6 +768,8 @@ video {
         width: 85px;
         font-size: 18px;
         height: 29px;
+        border: 0.8px solid black;
+        border-radius: 5px ;
     }
 
     #accepteerBox {
@@ -861,9 +865,6 @@ video {
 
     
      footer {
-        /* font-size: 15px;
-        box-shadow: 5px -3px 5px rgba(0, 0, 0, 0.15);
-        padding-bottom: 10px; */
         width: 768px ;
     }
 
@@ -875,10 +876,6 @@ video {
         width: 700px !important;
         margin: 0 auto;
      }
-
-     /* #footer-sty {
-        padding: 0vw 4vw;
-     } */
 
      #footer-logo {
         height: 100px;
@@ -1015,7 +1012,6 @@ video {
         font-size: 14px;
         background-color: #f5f5f5;
         gap: 10px; 
-        /* border: solid black 1px;   */
         padding-top: 8px;
         margin-bottom: 15px;
         width: 700px;
@@ -1038,7 +1034,6 @@ video {
 
     .class-for-menu h2 {
         font-size: 17px;
-        /* color: #F69B37; */
         border-bottom: solid black 1px;
         text-align: center;
     }
@@ -1057,7 +1052,6 @@ video {
     .p-for-menu {
         border-bottom: none;
         font-weight: bold;
-        /* color: #F69B37; */
         padding-top: 8px;
         text-align: center;
     }
@@ -1120,7 +1114,6 @@ video {
         padding: 0px 0px 25px 0px;
         justify-content: space-between;
         width: 650px;
-        /* margin: 0 auto; */
 
     }
 
@@ -1141,7 +1134,6 @@ video {
         display: flex;
         justify-content: space-between;
         width: 650px ;
-        /* margin: 0 auto; */
         padding: 0px 0px 20px 0px;
 
     }
@@ -1164,7 +1156,6 @@ video {
 
     #aantalPersonenBox {
         width: 650px ;
-        /* margin: 0 auto; */
         padding: 0px 0px 20px 0px;
     }
 
@@ -1176,7 +1167,6 @@ video {
 
     #accepteerBox {
         width: 650px ;
-        /* margin: 0 auto; */
         padding: 30px 0px 23px 0px;
         font-size: 19px;
     }
@@ -1217,7 +1207,6 @@ video {
         font-size: 20px;
         padding-left: 30px;
         width: 650px;
-        /* margin: 0 auto; */
     }
 
 
