@@ -3,7 +3,7 @@ $PATH = "../";
 $head = [
     "title" => "Privacy - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
-    "scripts" => []
+    "scripts" => ["{$PATH}js/sticky-header.js"]
 ];
 
 
