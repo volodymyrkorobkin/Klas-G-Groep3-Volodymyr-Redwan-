@@ -19,9 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('sticky');
         } else if (window.scrollY < headerPos) {
             header.style.top = '0';
-            header.classList.add('sticky');
         } else {
-            if (window.scrollY > header.offsetHeight || header.classList.contains('sticky')) {
+            if (window.scrollY > header.offsetHeight * 1.5 || header.classList.contains('sticky')) {
                 header.style.position = 'fixed';
                 header.style.top = '-' + (parseInt(header.offsetHeight) + 10)  + 'px'
                 
