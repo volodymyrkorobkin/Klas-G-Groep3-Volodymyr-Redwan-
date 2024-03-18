@@ -239,7 +239,6 @@ header a {
 #slides-wrap {
     height: 100%;
     transition: all 1s;
-    overflow: hidden;
 
     scroll-behavior: smooth;
 }
