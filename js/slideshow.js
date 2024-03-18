@@ -28,4 +28,6 @@ function prevSlide() {
 
 addEventListener('DOMContentLoaded', function() {
     slidesCnt = document.querySelector('#slides-wrap').childElementCount;
+
+    this.setInterval(nextSlide, 5000);
 });
