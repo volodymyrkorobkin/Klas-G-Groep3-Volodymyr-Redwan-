@@ -17,8 +17,8 @@ $head = [
 <body>
 <?php include $PATH . 'php/header.php'; ?>
 
-<main class="main-for-menu">
-        <h1 class="center-text phone-only">Menu</h1>
+<main class="main-for-menu  gap-50">
+        <h1 class="center-text phone-only gap-50 padding-50-0">Menu</h1>
 
         <img src="../img/UX IMG.png" alt="Image of the Menu folder" id="ye-menu-foto">
         <h1 class="h1-for-menu center-text">Fish platters</h1>
@@ -221,7 +221,7 @@ $head = [
         <p class="p-for-menu">$11.99</p>
     </article>
 </section>
-<section class="class-for-menu">
+<section class="class-for-menu" id="space-with-footer">
     <article>
         <h2>Sangria</h2>
         <p class="italicp-for-menu">Red wine, brandy, orange juice, mixed fruit, and soda water, served over ice.</p>

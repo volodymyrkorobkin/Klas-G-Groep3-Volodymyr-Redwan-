@@ -1,5 +1,5 @@
 <footer class="flex-column" id="footer-sty">
-    <section class="flex-column main-margin">
+    <section class="flex-column main-margin tablet-footer">
         <section class="flex gap-1">
             <img src="<?php echo $PATH ?>assets/logo-4.svg" alt="logo" id="footer-logo" class="margin-10-y">
             <section id="footer-info" class="flex space-between">

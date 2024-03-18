@@ -44,9 +44,9 @@ img {
     margin: 0 auto;
 }
 
-.phone-only {
+/* .phone-only {
     display: none;
-}
+} */
 
 /* Header and Footer */
 header {
@@ -565,13 +565,17 @@ header a {
     }
 
     .h1-for-menu {
-        padding-top: 1.5vw;
+        padding: 25px 0px 15px 0px;
         font-size: 2vw;
     }
 
     /* #exceptional-h-for-menu {
         padding-top: 3vw;
     } */
+
+    #space-with-footer {
+        margin-bottom: 30px;
+    }
     
 
   }
@@ -584,7 +588,7 @@ header a {
 
 .h1-for-aboutus {
     align-items: center;
-    padding-top: 0.8vw;
+    /* padding-top: 0.8vw; */
 }
 
 .class-for-aboutus-1 img, .class-for-aboutus-2 img {
@@ -605,7 +609,7 @@ header a {
 }
 
 video {
-    padding: 1vw 0vw;
+    padding: 0vw 0vw 1vw 0vw;
     width: 100%;
 }
 
@@ -798,29 +802,77 @@ video {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
-     /* Styling for Header and Footer */
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-
+    body {
+        width: 768px;
+    }    
     
+    
+    
+    /* Styling for Header and Footer */
+
+     .tablet-header {
+        width: 768px !important;
+        height: 100px;
+    }
+
+    .tablet-header section {
+        width: 700px !important;
+        margin: 0 auto;
+    }
+
+    .main-margin {
+        width: 768px;
+    }
+
+    header ul {
+        display: flex;
+        gap: 17px;
+        margin-right: 12px;
+    }
+
+    header ul a {
+        font-size: 19px;
+    }
 
      #header-img-sty {
-        /* width: 44.55vw; */
-        width: 342px;
-        height: 125px;
-        padding: 0vw 0vw 0vw 50px;
+        width: 220px;
+        height: 100px;
      }
 
-     /* .no-decoration {
-        padding: 0vw 0vw 0vw 0vw;
-     } */
+    
+     footer {
+        /* font-size: 15px;
+        box-shadow: 5px -3px 5px rgba(0, 0, 0, 0.15);
+        padding-bottom: 10px; */
+        width: 768px ;
+    }
 
      #footer-right {
         display: block;
      }
 
-     #footer-sty {
-        padding: 0vw 4vw;
+     .tablet-footer {
+        width: 700px !important;
+        margin: 0 auto;
      }
+
+     /* #footer-sty {
+        padding: 0vw 4vw;
+     } */
+
+     #footer-logo {
+        height: 100px;
+    }
+    
+    #footer-info {
+        width: 100%;
+        padding-top: 10px;
+    }
 
      
     
@@ -832,31 +884,40 @@ video {
      }
 
      .tablet-home-main {
+        width: 700px !important;
         margin: 0 auto;
-        width: 900px;
      }
 
      #slideshow-wrap {
-        /* margin: -6.6vw 12vw 0vw 12vw ; */
-        width: 900px;
+        width: 700px;
+        height: calc(700px* 4/7);
        
      }
 
+     #slideshow-wrap img {
+        width: 700px;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15);
+        
+    }
+
      .home-img-txt {
-        margin: 5px auto;
-        width: 900px;
-        gap: 40px;
+        margin-top: 5px ;
+        width: 700px;
+        gap: 17px;
      }
 
      .home-img-txt img{
         border-radius: 15px;
-        width: 400px;
-        height: calc(400px* 2/3);
+        width: 250px;
+        height: calc(250px* 2/3);
      }
 
      .home-img-txt p {
-        font-size: 16px;
+        font-size: 14px;
         /* padding: 4px auto; */
+        
      }
 
 
@@ -865,7 +926,7 @@ video {
 
      .main-for-aboutus {
         margin: 0 auto;
-        width: 900px;
+        width: 700px !important;
     }
 
     .h1-for-aboutus {
@@ -873,39 +934,39 @@ video {
     }
 
     .main-for-aboutus video {
-        margin: 0 auto;
-        padding: 0 auto;
-        width: 900px;
+        margin: 40px auto 0px auto;
+        width: 700px !important;
         
     }
 
     #h2-for-aboutus {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     #exceptional-p-for-aboutus {
-        font-size: 20px;
-        margin-bottom: 5vw;
+        font-size: 17px;
+        margin-bottom: 40px;
     }
 
     .class-for-aboutus-1, .class-for-aboutus-2 {
         display: flex;
         flex-direction: row;
-        gap: 40px;
-        padding-bottom: 3.4vw;
+        gap: 32px;
+        padding-bottom: 12px;
+        margin-top: 17px; 
     
     }
 
     .class-for-aboutus-1 img{
         order: 1;
-        width: 400px;
-        height: calc(400px* 2/3);
+        width: 250px;
+        height: calc(250px* 2/3);
        
     }
 
     .class-for-aboutus-2 img{
-        width: 400px;
-        height: calc(400px* 2/3);
+        width: 250px;
+        height: calc(250px* 2/3);
        
     }
 
@@ -917,15 +978,11 @@ video {
     .class-for-aboutus-1 article, .class-for-aboutus-2 article {
         width: 480px;
         height: 230px;
-        padding-top: 2vw;   
+        padding-top: 5px;   
     }
 
     .class-for-aboutus-1 article p, .class-for-aboutus-2 article p {
-        font-size: 18px; 
-    }
-
-    .class-for-aboutus-1, .class-for-aboutus-2 {
-        margin-top: 40px; 
+        font-size: 14px; 
     }
 
 
@@ -933,7 +990,7 @@ video {
     /* Styling for Menu */
     .main-for-menu {
         margin: 0 auto;
-        width: 768px;
+        width: 700px;
     }
 
     .class-for-menu {
@@ -946,15 +1003,21 @@ video {
         /* border: solid black 1px;   */
         padding-top: 8px;
         margin-bottom: 15px;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .phone-only {
+        display: none;
     }
 
     #ye-menu-foto {
-        margin: 5px auto;
-        width: 768px;
+        margin: 40px auto 0px auto;
+        width: 700px;
     }
 
     .class-for-menu article {
-        width: 768px;
+        width: 225px;
         border: solid black 1px; 
     }
 
@@ -962,11 +1025,12 @@ video {
         font-size: 17px;
         /* color: #F69B37; */
         border-bottom: solid black 1px;
+        text-align: center;
     }
 
     .italicp-for-menu {
         font-style: italic;
-        font-size: 2.3vw;
+        font-size: 14px;
     }
 
     .h1-for-menu {
@@ -983,6 +1047,10 @@ video {
         text-align: center;
     }
 
+    #space-with-footer {
+        margin-bottom: 40px;
+    }
+
 
     /* Styling for Gallery */
 
@@ -993,46 +1061,33 @@ video {
 
     .tab-gallerij {
         padding: 50px auto;
-        margin-top: -35px;
+        margin-top: 10px;
         
     }
-
-
-
-
-
-
-
-
-
 
 
      /* styling for Reserving webpage*/
      .main-reserve {
         margin: 0 auto;
-        width: 1000px;
+        width: 700px;
     }
 
     .reserveren-p {
-        /* width: 70vw; */
-        font-size: 23px;
-        width: 860px;
+        font-size: 20px;
         margin: 0 auto;
     }
 
     #reserveren {
-        /* margin: 0px 40px 0px 0px; */
-        width: 780px;
+        width: 700px;
         margin: 0 auto;
         padding: 20px 10px 0px 10px;
-        font-size: 23px;
+        font-size: 20px;
         background-color: #F69B37;
-        /* border: 0.8px solid black; */
-        border-radius: 10px;
+        border-radius: 19px;
     }
 
     #reservation-overview {
-        width: 860px;
+        width: 700px;
         margin: 0 auto;
         font-size: 20px;
         background-color: #f5f5f5;
@@ -1049,14 +1104,16 @@ video {
         display: flex;
         padding: 0px 0px 25px 0px;
         justify-content: space-between;
-        width: 720px;
-        margin: 0 auto;
+        width: 650px;
+        /* margin: 0 auto; */
 
     }
 
     .reserveren-sec input {
-        width: 500px;
+        width: 400px;
         height: 34px;
+        border-radius: 7px;
+        border: 1px solid ;
         
     }
 
@@ -1068,8 +1125,8 @@ video {
     #date-time {
         display: flex;
         justify-content: space-between;
-        width: 720px ;
-        margin: 0 auto;
+        width: 650px ;
+        /* margin: 0 auto; */
         padding: 0px 0px 20px 0px;
 
     }
@@ -1091,8 +1148,8 @@ video {
     }
 
     #aantalPersonenBox {
-        width: 720px ;
-        margin: 0 auto;
+        width: 650px ;
+        /* margin: 0 auto; */
         padding: 0px 0px 20px 0px;
     }
 
@@ -1103,9 +1160,10 @@ video {
     }
 
     #accepteerBox {
-        width: 720px ;
-        margin: 0 auto;
+        width: 650px ;
+        /* margin: 0 auto; */
         padding: 30px 0px 23px 0px;
+        font-size: 19px;
     }
 
     #accepteerBox input {
@@ -1120,6 +1178,7 @@ video {
     #submit-knop-res {
         text-align: center;
         padding: 30px 0px 23px 0px;
+        width: 685px;
 
     }
 
@@ -1128,7 +1187,7 @@ video {
         height: 42px;
         font-size: 20px;
         background-color: white;
-        border-radius: 8px;
+        border-radius: 10px;
         border-width: 0;
     }
 
@@ -1142,8 +1201,25 @@ video {
     .privacy {
         font-size: 20px;
         padding-left: 30px;
-        width: 860px;
+        width: 650px;
+        /* margin: 0 auto; */
+    }
+
+
+
+    /* Styling for Privacy webpage */
+
+    .main-for-privacy {
+        width: 700px;
         margin: 0 auto;
+    }
+
+    .main-for-privacy h1 {
+        font-size: 34px;
+    }
+
+    .privacy {
+        font-size: 20px;
     }
 
 

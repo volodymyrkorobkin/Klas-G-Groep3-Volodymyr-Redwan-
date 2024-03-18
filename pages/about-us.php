@@ -18,7 +18,7 @@ $head = [
 <?php include $PATH . 'php/header.php'; ?>
 
 <main class="main-for-aboutus main-margin   ">
-    <h1 class="h1-for-aboutus center-text">About-Us</h1>
+    <h1 class="h1-for-aboutus center-text gap-50 padding-50-0">About-Us</h1>
     <video autoplay muted loop>
         <source src="../img/Fish-cooking video-2.mp4" type="video/mp4">
     </video>
