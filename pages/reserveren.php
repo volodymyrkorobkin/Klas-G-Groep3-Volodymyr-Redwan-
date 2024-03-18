@@ -4,7 +4,7 @@ $PATH = "../";
 $head = [
     "title" => "Reserveren - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
-    "scripts" => ["{$PATH}js/zoom.js", "{$PATH}js/slideshow.js", "{$PATH}js/readmore.js", "{$PATH}js/reserveren.js"]
+    "scripts" => ["{$PATH}js/reserveren.js", "{$PATH}js/sticky-header.js"]
 ];
 
 ?>

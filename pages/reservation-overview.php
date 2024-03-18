@@ -6,7 +6,7 @@ include $PATH . "php/email.php";
 $head = [
     "title" => "Reservation overview - Eat Fish Restaurant",
     "styles" => ["{$PATH}css/style.css"],
-    "scripts" => []
+    "scripts" => ["{$PATH}js/sticky-header.js"]
 ];
 
 $keys = ["voornaam", "tussenvoegsel", "achternaam", "telefoonnummer", "email", "datum", "time", "aantalPersonen", "accepteer", "submit"];

@@ -62,6 +62,16 @@ header {
     height: 125px;
     font-size: 24px;
     grid-area: header;
+
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+header.sticky {
+    transition: all 0.5s;
 }
 
 header ul {
@@ -268,7 +278,7 @@ header a {
 }
 
 #footer-info img {
-    width: 60px;
+    width: 45px;
 }
 
 
