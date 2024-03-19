@@ -26,6 +26,12 @@ $head = [
             <figure>
                 <img src="../img/home-2.png">
             </figure>
+            <figure>
+                <img src="../img/home-2.png">
+            </figure>
+            <figure>
+                <img src="../img/home-2.png">
+            </figure>
         </section>
 
         <button onclick="prevSlide()" id="prevSlide">
