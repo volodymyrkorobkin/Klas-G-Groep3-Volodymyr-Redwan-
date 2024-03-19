@@ -62,7 +62,7 @@ header {
     grid-area: header;
 
     z-index: 9;
-    position: absolute;
+    position: unset;
     top: 0;
     width: 100%;
 }
@@ -357,29 +357,31 @@ header nav a {
     }
     #burger-menu-checkbox ~ ul {
         top: -400px;
-        z-index: -999;
         transition: all 0.5s;
         position: absolute;
         display: flex;
         width: 100%;
         background-color: #F69B37;
-    }
-
-    #burger-menu-checkbox:checked ~ ul {
         flex-direction: column;
-        top: 80px;
-        left: 0;
-
         font-size: 24px;
         gap: 0;
+        left: 0;
     }
 
-    #burger-menu-checkbox:checked ~ ul li a {
-        display: block;
+    #burger-menu-checkbox ~ ul li a {
         text-align: center;
         padding: 1rem 0;
         border-bottom: 1px solid black;
         margin: 0;
+        z-index: 10;
+    }
+
+    #burger-menu-checkbox:checked ~ ul {
+        top: 80px;
+    }
+
+    #burger-menu-checkbox:checked ~ ul li a {
+        display: block;
     }
 
     #footer-info {
