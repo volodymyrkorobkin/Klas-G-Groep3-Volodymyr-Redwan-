@@ -1,3 +1,4 @@
+//TODO finger swipe for mobile
 let currentSlide = 0;
 let slidesCnt;
 let slideShowTimeout = 0;

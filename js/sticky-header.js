@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
     window.addEventListener('scroll', function(e) {
-
-        console.log(window.scrollY, headerPos);
-
         if (window.scrollY <= 0) {
             header.style.position = 'unset'
             header.style.top = header.offsetHeight + 'px';
