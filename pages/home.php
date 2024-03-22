@@ -26,6 +26,12 @@ $head = [
             <figure>
                 <img src="../img/home-2.png">
             </figure>
+            <figure>
+                <img src="../img/home-2.png">
+            </figure>
+            <figure>
+                <img src="../img/home-2.png">
+            </figure>
         </section>
 
         <button onclick="prevSlide()" id="prevSlide">
@@ -39,15 +45,15 @@ $head = [
 
     <article class="block flex space-between home-img-txt">
         <img src="../img/home-2.png" class="shadow transform-view">
-        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros elit, dictum a scelerisque maximus, accumsan a nunc. Etiam nunc ante, bibendum vitae dapibus sit amet, bibendum at orci. Mauris interdum, arcu ullamcorper mattis aliquam, metus odio finibus tellus, ut feugiat ligula felis a metus. Etiam efficitur ante sed tortor efficitur, vel congue purus viverra. Quisque ac turpis vehicula, ultricies arcu id, finibus nibh. Suspendisse potenti. Nam id ante mauris. Phasellus bibendum, libero nec varius faucibus, quam risus suscipit libero, eget luctus justo libero eget odio. </p>
+        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros elit, dictum a scelerisque maximus, accumsan a nunc. Etiam nunc ante, bibendum vitae dapibus sit amet, bibendum at orci. Mauris interdum, arcu ullamcorper mattis aliquam, metus odio finibus tellus, ut feugiat ligula felis a metus. Etiam efficitur ante sed tortor efficitur, vel congue purus viverra. Quisque ac turpis vehicula, ultricies arcu id, finibus nibh. Suspendisse potenti. </p>
     </article>
     <article class="block flex-reverse space-between home-img-txt">
         <img src="../img/home-3.png" class="shadow transform-view">
-        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros elit, dictum a scelerisque maximus, accumsan a nunc. Etiam nunc ante, bibendum vitae dapibus sit amet, bibendum at orci. Mauris interdum, arcu ullamcorper mattis aliquam, metus odio finibus tellus, ut feugiat ligula felis a metus. Etiam efficitur ante sed tortor efficitur, vel congue purus viverra. Quisque ac turpis vehicula, ultricies arcu id, finibus nibh. Suspendisse potenti. Nam id ante mauris. Phasellus bibendum, libero nec varius faucibus, quam risus suscipit libero, eget luctus justo libero eget odio. </p>
+        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Phasellus bibendum, libero nec varius faucibus, quam risus suscipit libero, eget luctus justo libero eget odio. </p>
     </article>
     <article class="block flex space-between home-img-txt">
         <img src="../img/home-4.png" class="shadow transform-view">
-        <p class="readmore">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eros elit, dictum a scelerisque maximus, accumsan a nunc. Etiam nunc ante, bibendum vitae dapibus sit amet, bibendum at orci. Mauris interdum, arcu ullamcorper mattis aliquam, metus odio finibus tellus, ut feugiat ligula felis a metus. Etiam efficitur ante sed tortor efficitur, vel congue purus viverra. Quisque ac turpis vehicula, ultricies arcu id, finibus nibh. Suspendisse potenti. Nam id ante mauris. Phasellus bibendum, libero nec varius faucibus, quam risus suscipit libero, eget luctus justo libero eget odio. </p>
+        <p class="readmore">Maecenas eros elit, dictum a scelerisque maximus, accumsan a nunc. Etiam nunc ante, bibendum vitae dapibus sit amet, bibendum at orci. Mauris interdum, arcu ullamcorper mattis aliquam, metus odio finibus tellus, ut feugiat ligula felis a metus. Etiam efficitur ante sed tortor efficitur, vel congue purus viverra. Quisque ac turpis vehicula, ultricies arcu id, finibus nibh. Suspendisse potenti. Nam id ante mauris. Phasellus bibendum, libero nec varius faucibus, quam risus suscipit libero, eget luctus justo libero eget odio. </p>
     </article>
     
 </main>

@@ -1,24 +1,21 @@
-
-
-let headerPos;
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    let header = document.querySelector('header');
+    const header = document.querySelector('header');
+    const body = document.querySelector('body');
+    
     let headerPos = 0;
 
-    document.querySelector('body').style.paddingTop = header.offsetHeight + 'px';
+
+    body.style.paddingTop = header.offsetHeight + 'px';
+    header.style.marginTop = '-' + header.offsetHeight + 'px';
     
 
     window.addEventListener('scroll', function(e) {
-
-        if (window.scrollY == 0) {
-            header.style.position = 'absolute';
-            header.style.top = '0';
+        if (window.scrollY <= 0) {
+            header.style.position = 'unset'
+            header.style.top = header.offsetHeight + 'px';
             header.classList.remove('sticky');
         } else if (window.scrollY < headerPos) {
-            header.style.top = '0';
+            header.style.top = header.offsetHeight + 'px';
         } else {
             if (window.scrollY > header.offsetHeight * 1.5 || header.classList.contains('sticky')) {
                 header.style.position = 'fixed';

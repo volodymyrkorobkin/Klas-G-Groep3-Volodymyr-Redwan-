@@ -1,19 +1,18 @@
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
-    const emetents = document.querySelectorAll(".transform-view");
+    if ('ontouchstart' in window) {
+        return;
+    }
 
+    const emetents = document.querySelectorAll(".transform-view");
     const MAX_TRANSFORM = 0.00008;
 
     emetents.forEach(function(element) {
         let mouseEvent = null;
-
         let x, y;
 
-        element.style.transition = "all 0.1s";
-
+        element.style.transition = "transform 0.1s";
         element.addEventListener("mousemove", function(e) {
             x = (e.clientX - (element.offsetLeft - window.scrollX))/element.clientWidth;
             y = (e.clientY - (element.offsetTop - window.scrollY))/element.clientHeight;
