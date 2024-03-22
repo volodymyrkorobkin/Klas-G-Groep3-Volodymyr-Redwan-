@@ -19,9 +19,9 @@
                     </section>
                 </section>
                 <section class="flex align-end">
-                    <img src="<?php echo $PATH ?>assets/facebook.svg" alt="" class="margin-10">
-                    <img src="<?php echo $PATH ?>assets/telegram.svg" alt="" class="margin-10">
-                    <img src="<?php echo $PATH ?>assets/twitter.svg" alt="" class="margin-10">
+                    <a href="https://www.facebook.com/" target="_blank"> <img src="<?php echo $PATH ?>assets/facebook.svg" alt="" class="margin-10"> </a>
+                    <a href="https://web.telegram.org/k/" target="_blank"> <img src="<?php echo $PATH ?>assets/telegram.svg" alt="" class="margin-10"> </a>
+                    <a href="https://twitter.com/" target="_blank"> <img src="<?php echo $PATH ?>assets/twitter.svg" alt="" class="margin-10">  </a>
                 </section>
             </section>
         </section>
