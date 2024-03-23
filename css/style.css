@@ -325,10 +325,6 @@ header nav a {
         font-size: 16px;
     }
 
-    #footer-info img {
-        width: 25%;
-    }
-
     footer .gap-1 {
         gap: 0;
     }
@@ -373,14 +369,11 @@ header nav a {
         border-bottom: 1px solid black;
         margin: 0;
         z-index: 10;
+        display: block;
     }
 
     #burger-menu-checkbox:checked ~ ul {
         top: 80px;
-    }
-
-    #burger-menu-checkbox:checked ~ ul li a {
-        display: block;
     }
 
     #footer-info {
