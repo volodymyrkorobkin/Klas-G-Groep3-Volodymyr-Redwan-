@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (window.scrollY < headerPos) {
             header.style.top = header.offsetHeight + 'px';
         } else {
-            if (window.scrollY > header.offsetHeight * 1.5 || header.classList.contains('sticky')) {
+            const checkBox = document.querySelector('#burger-menu-checkbox');
+            if ((window.scrollY > header.offsetHeight * 1.5 || header.classList.contains('sticky')) && !checkBox.checked) {
                 header.style.position = 'fixed';
                 header.style.top = '-' + (parseInt(header.offsetHeight) + 10)  + 'px'
                 
