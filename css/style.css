@@ -11,7 +11,7 @@ body {
     min-width: fit-content;
 
     display: grid;
-    grid-template-columns: 1fr min(1000px, 100vw) 1fr;
+    grid-template-columns: 1fr min(1000px, 96vw) 1fr;
     grid-template-rows: auto;
     grid-template-areas: 'header header header' 
                         'main main main' 
@@ -48,7 +48,7 @@ img {
 }
 
 .main-margin {
-    width: min(1000px, 100vw);
+    width: min(1000px, 96vw);
     margin: 0 auto;
 }
 
@@ -1355,5 +1355,55 @@ video {
         gap: 3vw;
         font-size: 3vw;
     }
+}
+
+
+
+
+/* Arrangementen */
+
+#arrangementen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 10px; 
+}
+
+#arrangementen-grid article {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+#arrangementen-grid article img {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#arrangementen-grid article span {
+    display: flex;
+    justify-content: space-between;
+}
+
+#arrangementen-grid article > p {
+    font-size: 1rem;
+    margin: auto;
+}
+
+#arrangementen-grid article span p {
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#arrangementen-grid article:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #f0f0f0;
 }
 
