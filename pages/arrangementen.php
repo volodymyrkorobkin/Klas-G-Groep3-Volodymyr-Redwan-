@@ -4,7 +4,7 @@ $PATH = '../';
 $head = [
     'title' => 'Arrangementen',
     'styles' => ['../css/style.css'],
-    'scripts' => ['../js/script.js']
+    'scripts' => ['../js/script.js', '../js/sticky-header.js']
 ];
 
 
@@ -12,7 +12,7 @@ $head = [
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <?php include '../php/head.php'; ?>
 <body>
 <?php include '../php/header.php'; ?>

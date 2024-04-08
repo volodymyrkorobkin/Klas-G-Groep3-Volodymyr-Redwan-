@@ -858,10 +858,6 @@ video {
         margin-right: 12px;
     }
 
-    header ul a {
-        font-size: 19px;
-    }
-
      #header-img-sty {
         width: 220px;
         height: 100px;
@@ -1635,3 +1631,164 @@ video {
         margin-bottom: 20px;
       }
 }      
+
+
+
+.review {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+
+    margin: 10px;
+}
+
+.review img {
+    height: 50px;
+    width: 50px;
+    border-radius: 99px;
+    border: 1px transparent rgba(0, 0, 0, 0.1);
+}
+
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#reviews form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#reviews form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: all 0.2s;
+    font-size: 1.25rem;
+    width: 35%;
+}
+
+@media screen and (max-width: 480px){
+    #reviews form input {
+        width: 100%;
+    }
+}
+
+#reviews form textarea {
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: all 0.2s;
+    font-size: 1.25rem;
+
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+#reviews form input[type="submit"] {
+    width: 100%;
+}
+
+#reviews form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #F69B37;
+}
+
+
+
+
+#openDropDown {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#openDropDown:hover #dropdown {
+    opacity: 1;
+    height: auto;
+    display: flex;
+}
+
+.dropdown { 
+    opacity: 0;
+    display: none;
+    flex-direction: column;
+    transition: 0.5s;
+    position: absolute;
+    height: 0;
+    top: 4.80rem;
+
+    background-color: #F69B37;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    z-index: 1;
+
+    border-radius: 10px;
+}
+
+ul.dropdown li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+ul.dropdown {
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 768px){
+    .dropdown {
+        top: 2rem;
+    }
+    #openDropDown {
+        position: relative;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
+    .dropdown {
+        right: 0;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .dropdown {
+        display: unset;
+        position: relative;
+        height: auto;
+        top: unset;
+        opacity: 1;
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    .dropdown li {
+        padding: 0 !important;
+    }
+
+    #openDropDown > a {
+        display: none !important;
+    }
+}
