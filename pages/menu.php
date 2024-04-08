@@ -221,7 +221,7 @@ $head = [
         <p class="p-for-menu">$11.99</p>
     </article>
 </section>
-<section class="class-for-menu" id="space-with-footer">
+<section class="class-for-menu" class="space-with-footer">
     <article>
         <h2>Sangria</h2>
         <p class="italicp-for-menu">Red wine, brandy, orange juice, mixed fruit, and soda water, served over ice.</p>

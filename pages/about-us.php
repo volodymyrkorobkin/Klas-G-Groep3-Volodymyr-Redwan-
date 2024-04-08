@@ -11,11 +11,14 @@ $head = [
 
 <!DOCTYPE html>
 <html lang="nl">
-<?php include $PATH . 'php/head.php'; ?>
-
+<head>
+    <?php include $PATH . 'php/head.php'; ?>
+</head>
 
 <body>
-<?php include $PATH . 'php/header.php'; ?>
+<header>
+    <?php include $PATH . 'php/header.php'; ?>
+</header>
 
 <main class="main-for-aboutus main-margin   ">
     <h1 class="h1-for-aboutus center-text gap-50 padding-50-0">About-Us</h1>
@@ -77,8 +80,10 @@ $head = [
 
 
 </main>
-    
-<?php include $PATH . 'php/footer.php'; ?>
+
+<footer>
+    <?php include $PATH . 'php/footer.php'; ?>
+</footer>   
 </body>
 
 </html>
